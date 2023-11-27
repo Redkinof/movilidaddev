@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-24 13:14:15.093204",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "detalles_tab",
+  "informacion_section",
+  "fecha_y_hora",
+  "localidad",
+  "municipio",
+  "zona",
+  "column_break_ccrj",
+  "calle",
+  "colonia",
+  "entre_calle",
+  "mapa_accidente_section",
+  "latitud_y_longitud",
+  "section_break_ilfu",
+  "aaaa",
+  "accidente_tab",
+  "datos_accidente_section",
+  "causa",
+  "tipo_de_accidente",
+  "clase",
+  "column_break_xzrb",
+  "valoracion_de_danos",
+  "rh",
+  "delito",
+  "vehiculos_section",
+  "table_qtfn",
+  "lesionados_section",
+  "table_akzc"
+ ],
+ "fields": [
+  {
+   "fieldname": "detalles_tab",
+   "fieldtype": "Tab Break",
+   "label": "DETALLES"
+  },
+  {
+   "fieldname": "informacion_section",
+   "fieldtype": "Section Break",
+   "label": "INFORMACION"
+  },
+  {
+   "fieldname": "fecha_y_hora",
+   "fieldtype": "Datetime",
+   "label": "FECHA Y HORA"
+  },
+  {
+   "fieldname": "localidad",
+   "fieldtype": "Select",
+   "label": "LOCALIDAD",
+   "options": "TEPIC"
+  },
+  {
+   "default": "ACAPONETA",
+   "fieldname": "municipio",
+   "fieldtype": "Select",
+   "label": "MUNICIPIO",
+   "options": "ACAPONETA\nAHUACATLAN\nAMATLAN DE CA\u00d1AS\nBAHIA DE BANDERAS\nCOMPOSTELA\nDEL NAYAR\nHUAJICORI\nIXTLAN DEL RIO\nJALA\nLA YESCA\nROSAMORADA\nRUIZ\nSAN BLAS\nSAN PEDRO LAGUNILLAS\nSANTA MARIA DEL ORO\nSANTIAGO IXCUINTLA\nTECUALA\nTEPIC\nTUXPAN\nXALISCO"
+  },
+  {
+   "fieldname": "zona",
+   "fieldtype": "Data",
+   "label": "ZONA"
+  },
+  {
+   "fieldname": "column_break_ccrj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calle",
+   "fieldtype": "Data",
+   "label": "CALLE"
+  },
+  {
+   "fieldname": "colonia",
+   "fieldtype": "Data",
+   "label": "COLONIA"
+  },
+  {
+   "fieldname": "entre_calle",
+   "fieldtype": "Data",
+   "label": "ENTRE CALLE"
+  },
+  {
+   "fieldname": "mapa_accidente_section",
+   "fieldtype": "Section Break",
+   "label": "MAPA ACCIDENTE"
+  },
+  {
+   "fieldname": "latitud_y_longitud",
+   "fieldtype": "Geolocation",
+   "label": "LATITUD Y LONGITUD"
+  },
+  {
+   "fieldname": "section_break_ilfu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "aaaa",
+   "fieldtype": "Attach",
+   "label": "aaaa"
+  },
+  {
+   "fieldname": "accidente_tab",
+   "fieldtype": "Tab Break",
+   "label": "ACCIDENTE"
+  },
+  {
+   "fieldname": "datos_accidente_section",
+   "fieldtype": "Section Break",
+   "label": "DATOS ACCIDENTE"
+  },
+  {
+   "fieldname": "causa",
+   "fieldtype": "Select",
+   "label": "CAUSA",
+   "options": "CONDUCTOR\nPEATON O PASAJERO\nFALLA DE VEHICULO\nMALA CONDICION DE CAMINO\nOTRAS CAUSAS\nCONDUCIR EBRIO"
+  },
+  {
+   "fieldname": "tipo_de_accidente",
+   "fieldtype": "Select",
+   "label": "TIPO DE ACCIDENTE",
+   "options": "COLISION CON VEHICULO\nCOLISION CON PEATON\nCOLISION CON ANIMAL\nCOLISION CON OBJETO FIJO\nVOLCADURA\nCAIDA DE PASAJERO\nSALIDA DE CAMINO\nINCENDIO\nCOLISION CON FERROCARRIL\nCOLISION CON MOTOCICLISTA\nCOLISION CON CICLISTA\nDERRAPE\nOTROS ACCIDENTES\nASEGURADO POR ESTAR EBRIO"
+  },
+  {
+   "fieldname": "clase",
+   "fieldtype": "Select",
+   "label": "CLASE",
+   "options": "FATAL\nNO FATAL (HERIDOS)\nSOLO DA\u00d1OS\nASEGURACION DE VEHICULO"
+  },
+  {
+   "fieldname": "column_break_xzrb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "valoracion_de_danos",
+   "fieldtype": "Data",
+   "label": "VALORACION DE DA\u00d1OS"
+  },
+  {
+   "fieldname": "rh",
+   "fieldtype": "Data",
+   "label": "RH"
+  },
+  {
+   "fieldname": "delito",
+   "fieldtype": "Data",
+   "label": "DELITO"
+  },
+  {
+   "fieldname": "vehiculos_section",
+   "fieldtype": "Section Break",
+   "label": "VEHICULOS"
+  },
+  {
+   "fieldname": "table_qtfn",
+   "fieldtype": "Table",
+   "options": "VEHICULOS ACCIDENTE"
+  },
+  {
+   "fieldname": "lesionados_section",
+   "fieldtype": "Section Break",
+   "label": "LESIONADOS"
+  },
+  {
+   "fieldname": "table_akzc",
+   "fieldtype": "Table",
+   "options": "LESIONADOS ACCIDENTE"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-27 14:42:22.264071",
+ "modified_by": "Administrator",
+ "module": "Dev app",
+ "name": "ACCIDENTE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

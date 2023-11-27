@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-24 13:33:34.247566",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tipo_de_vehiculo",
+  "uso",
+  "clase",
+  "estado"
+ ],
+ "fields": [
+  {
+   "fieldname": "tipo_de_vehiculo",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "TIPO DE VEHICULO",
+   "options": "PICK UP\nSUV\nSEDAN\nMOTOCICLETA\nBICICLETA\nCAMION DE PASAJEROS\nTRACTOCAMION\nPIPA\nCAMIONETA DE CARGA\nCAMION DE CARGA TIPO TORTON\nCAMION DE CARGA TIPO VOLTEO\nBICICLETA\nSE DIO A LA FUGA\nOTROS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uso",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "USO",
+   "options": "PARTICULAR\nPUBLICO\nSD",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clase",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "CLASE",
+   "options": "FATAL\nNO FATAL (HERIDOS)\nSOLO DA\u00d1OS\nASEGURACION DE VEHICULO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "ESTADO",
+   "options": "AGUASCALIENTES\nBAJA CALIFORNIA\nBAJA CALIFORNIA SUR\nCAMPECHE\nCHIAPAS\nCHIHUAHUA\nCOAHUILA\nCOLIMA\nDISTRITO FEDERAL\nDURANGO\nGUANAJUATO\nGUERRERO\nHIDALGO\nJALISCO\nM\u00c9XICO\nMICHOAC\u00c1N\nMORELOS\nNAYARIT\nNUEVO LE\u00d3N\nOAXACA\nPUEBLA\nQUER\u00c9TARO\nQUINTANA ROO\nSAN LUIS POTOS\u00cd\nSINALOA\nSONORA\nTABASCO\nTAMAULIPAS\nTLAXCALA\nVERACRUZ\nYUCAT\u00c1N\nZACATECAS\nSIN INFORMACION\nEXTRANJERO\nFEDERAL",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-27 14:43:00.478435",
+ "modified_by": "Administrator",
+ "module": "Dev app",
+ "name": "VEHICULOS ACCIDENTE",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
