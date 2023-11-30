@@ -41,7 +41,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-30 11:40:29.983888",
+ "modified": "2023-11-30 15:29:28.207584",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "MUNICIPIO",
@@ -61,6 +61,7 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
