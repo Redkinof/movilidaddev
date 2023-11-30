@@ -1,7 +1,6 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:localidad",
  "creation": "2023-11-30 13:05:18.788501",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -34,17 +33,15 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Localidad",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-30 13:06:50.572075",
+ "modified": "2023-11-30 15:26:04.804503",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "LOCALIDAD",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -60,7 +57,9 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "localidad"
 }
