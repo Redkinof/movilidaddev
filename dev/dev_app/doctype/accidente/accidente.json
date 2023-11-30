@@ -8,8 +8,8 @@
   "detalles_tab",
   "informacion_section",
   "fecha_y_hora",
-  "localidad",
   "municipio",
+  "localidad",
   "zona",
   "column_break_ccrj",
   "calle",
@@ -17,8 +17,6 @@
   "entre_calle",
   "mapa_accidente_section",
   "latitud_y_longitud",
-  "section_break_ilfu",
-  "aaaa",
   "accidente_tab",
   "datos_accidente_section",
   "causa",
@@ -50,17 +48,18 @@
    "label": "FECHA Y HORA"
   },
   {
+   "depends_on": "municipio",
+   "fetch_from": ".",
    "fieldname": "localidad",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "LOCALIDAD",
-   "options": "TEPIC"
+   "options": "LOCALIDAD"
   },
   {
-   "default": "ACAPONETA",
    "fieldname": "municipio",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "MUNICIPIO",
-   "options": "ACAPONETA\nAHUACATLAN\nAMATLAN DE CA\u00d1AS\nBAHIA DE BANDERAS\nCOMPOSTELA\nDEL NAYAR\nHUAJICORI\nIXTLAN DEL RIO\nJALA\nLA YESCA\nROSAMORADA\nRUIZ\nSAN BLAS\nSAN PEDRO LAGUNILLAS\nSANTA MARIA DEL ORO\nSANTIAGO IXCUINTLA\nTECUALA\nTEPIC\nTUXPAN\nXALISCO"
+   "options": "MUNICIPIO"
   },
   {
    "fieldname": "zona",
@@ -95,15 +94,6 @@
    "fieldname": "latitud_y_longitud",
    "fieldtype": "Geolocation",
    "label": "LATITUD Y LONGITUD"
-  },
-  {
-   "fieldname": "section_break_ilfu",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "aaaa",
-   "fieldtype": "Attach",
-   "label": "aaaa"
   },
   {
    "fieldname": "accidente_tab",
@@ -175,7 +165,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-27 14:42:22.264071",
+ "modified": "2023-11-30 13:32:35.520325",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "ACCIDENTE",

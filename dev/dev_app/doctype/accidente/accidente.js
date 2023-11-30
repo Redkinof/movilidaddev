@@ -4,5 +4,12 @@
 frappe.ui.form.on("ACCIDENTE", {
 	refresh(frm) {
         frm.get_field("latitud_y_longitud").map.setView([21.485202, -104.877471],13);
+		frm.fields_dict.localidad.get_query = function(doc) {
+			return {
+				filters: {
+					municipio: doc.municipio
+				}
+			}
+		}
 	},
 });
