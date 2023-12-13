@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": ".######",
  "creation": "2023-11-24 13:14:15.093204",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -10,41 +11,81 @@
   "fecha_y_hora",
   "municipio",
   "localidad",
-  "zona",
+  "libramiento_de_tepic",
   "column_break_ccrj",
-  "calle",
+  "calle_y_no",
   "colonia",
   "entre_calle",
+  "participantes_section",
+  "peaton",
+  "bicicleta",
+  "autobus",
+  "combi",
+  "column_break_kggu",
+  "taxi",
+  "camion_de_carga",
+  "automovil_particular",
+  "motocicleta",
   "mapa_accidente_section",
   "latitud_y_longitud",
-  "accidente_tab",
   "datos_accidente_section",
-  "causa",
   "tipo_de_accidente",
+  "otro_accidente",
+  "causa",
+  "otra_causa",
   "clase",
-  "column_break_xzrb",
-  "valoracion_de_danos",
+  "column_break_vety",
   "rh",
   "delito",
+  "accidente_tab",
   "vehiculos_section",
-  "table_qtfn",
-  "lesionados_section",
-  "table_akzc"
+  "vehiculos",
+  "peatones_o_ciclistas_section",
+  "peaton_o_ciclista",
+  "costos_section",
+  "valoracion_de_danos",
+  "total_de_vehiculos_participantes",
+  "lesionados",
+  "column_break_etpf",
+  "fallecidos",
+  "hospitalizados",
+  "solo_da\u00f1os",
+  "datos_del_primer_responsable_section",
+  "nombre_responsable",
+  "\u00e1rea",
+  "column_break_ciil",
+  "no_de_unidad",
+  "identificacion",
+  "datos_del_agente_section",
+  "nombre",
+  "delegaci\u00f3n",
+  "column_break_jfxl",
+  "nopatrulla",
+  "identificaci\u00f3n",
+  "narrativa_tab",
+  "descripci\u00f3n_section",
+  "narrativa_de_los_hechos",
+  "firmas_section",
+  "agente_de_movilidad",
+  "column_break_iomy",
+  "comandante_en_turno"
  ],
  "fields": [
   {
    "fieldname": "detalles_tab",
    "fieldtype": "Tab Break",
-   "label": "DETALLES"
+   "label": "INFORMACI\u00d3N"
   },
   {
    "fieldname": "informacion_section",
    "fieldtype": "Section Break",
-   "label": "INFORMACION"
+   "label": "REPORTE ACCIDENTE"
   },
   {
    "fieldname": "fecha_y_hora",
    "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "FECHA Y HORA"
   },
   {
@@ -58,22 +99,13 @@
   {
    "fieldname": "municipio",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "MUNICIPIO",
    "options": "MUNICIPIO"
   },
   {
-   "fieldname": "zona",
-   "fieldtype": "Data",
-   "label": "ZONA"
-  },
-  {
    "fieldname": "column_break_ccrj",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "calle",
-   "fieldtype": "Data",
-   "label": "CALLE"
   },
   {
    "fieldname": "colonia",
@@ -109,23 +141,20 @@
    "fieldname": "causa",
    "fieldtype": "Select",
    "label": "CAUSA",
-   "options": "CONDUCTOR\nPEATON O PASAJERO\nFALLA DE VEHICULO\nMALA CONDICION DE CAMINO\nOTRAS CAUSAS\nCONDUCIR EBRIO"
+   "options": "CONDUCTOR\nPEATON O PASAJERO\nFALLA DE VEHICULO\nMALA CONDICION DE CAMINO\nCONDUCIR EBRIO\nOTRAS CAUSAS"
   },
   {
    "fieldname": "tipo_de_accidente",
    "fieldtype": "Select",
    "label": "TIPO DE ACCIDENTE",
-   "options": "COLISION CON VEHICULO\nCOLISION CON PEATON\nCOLISION CON ANIMAL\nCOLISION CON OBJETO FIJO\nVOLCADURA\nCAIDA DE PASAJERO\nSALIDA DE CAMINO\nINCENDIO\nCOLISION CON FERROCARRIL\nCOLISION CON MOTOCICLISTA\nCOLISION CON CICLISTA\nDERRAPE\nOTROS ACCIDENTES\nASEGURADO POR ESTAR EBRIO"
+   "options": "COLISION CON VEHICULO\nCOLISION CON PEATON\nCOLISION CON ANIMAL\nCOLISION CON OBJETO FIJO\nVOLCADURA\nCAIDA DE PASAJERO\nSALIDA DE CAMINO\nINCENDIO\nCOLISION CON FERROCARRIL\nCOLISION CON MOTOCICLISTA\nCOLISION CON CICLISTA\nDERRAPE\nASEGURADO POR ESTAR EBRIO\nOTROS ACCIDENTES",
+   "reqd": 1
   },
   {
    "fieldname": "clase",
    "fieldtype": "Select",
    "label": "CLASE",
    "options": "FATAL\nNO FATAL (HERIDOS)\nSOLO DA\u00d1OS\nASEGURACION DE VEHICULO"
-  },
-  {
-   "fieldname": "column_break_xzrb",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "valoracion_de_danos",
@@ -148,27 +177,250 @@
    "label": "VEHICULOS"
   },
   {
-   "fieldname": "table_qtfn",
-   "fieldtype": "Table",
-   "options": "VEHICULOS ACCIDENTE"
-  },
-  {
-   "fieldname": "lesionados_section",
+   "fieldname": "datos_del_agente_section",
    "fieldtype": "Section Break",
-   "label": "LESIONADOS"
+   "label": "DATOS DEL AGENTE"
   },
   {
-   "fieldname": "table_akzc",
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "NOMBRE"
+  },
+  {
+   "fieldname": "delegaci\u00f3n",
+   "fieldtype": "Data",
+   "label": "DELEGACI\u00d3N"
+  },
+  {
+   "fieldname": "column_break_jfxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nopatrulla",
+   "fieldtype": "Data",
+   "label": "No.PATRULLA"
+  },
+  {
+   "fieldname": "identificaci\u00f3n",
+   "fieldtype": "Data",
+   "label": "IDENTIFICACI\u00d3N"
+  },
+  {
+   "fieldname": "participantes_section",
+   "fieldtype": "Section Break",
+   "label": "PARTICIPANTES"
+  },
+  {
+   "fieldname": "libramiento_de_tepic",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "LIBRAMIENTO DE TEPIC",
+   "options": "PONIENTE\nORIENTE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "calle_y_no",
+   "fieldtype": "Data",
+   "label": "CALLE Y No."
+  },
+  {
+   "fieldname": "peatones_o_ciclistas_section",
+   "fieldtype": "Section Break",
+   "label": "PEATONES O CICLISTAS"
+  },
+  {
+   "fieldname": "peaton_o_ciclista",
    "fieldtype": "Table",
-   "options": "LESIONADOS ACCIDENTE"
+   "label": "PEATON O CICLISTA",
+   "options": "PEATON O CICLISTA"
+  },
+  {
+   "fieldname": "column_break_vety",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "costos_section",
+   "fieldtype": "Section Break",
+   "label": "COSTOS"
+  },
+  {
+   "fieldname": "total_de_vehiculos_participantes",
+   "fieldtype": "Data",
+   "label": "TOTAL DE VEHICULOS PARTICIPANTES",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lesionados",
+   "fieldtype": "Data",
+   "label": "LESIONADOS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_etpf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fallecidos",
+   "fieldtype": "Data",
+   "label": "FALLECIDOS",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "solo_da\u00f1os",
+   "fieldtype": "Check",
+   "label": "SOLO DA\u00d1OS"
+  },
+  {
+   "fieldname": "datos_del_primer_responsable_section",
+   "fieldtype": "Section Break",
+   "label": "DATOS DEL PRIMER RESPONDIENTE"
+  },
+  {
+   "fieldname": "nombre_responsable",
+   "fieldtype": "Data",
+   "label": "NOMBRE RESPONSABLE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "\u00e1rea",
+   "fieldtype": "Data",
+   "label": "\u00c1REA"
+  },
+  {
+   "fieldname": "column_break_ciil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_de_unidad",
+   "fieldtype": "Data",
+   "label": "No. DE UNIDAD",
+   "reqd": 1
+  },
+  {
+   "fieldname": "identificacion",
+   "fieldtype": "Data",
+   "label": "IDENTIFICACION",
+   "reqd": 1
+  },
+  {
+   "fieldname": "descripci\u00f3n_section",
+   "fieldtype": "Section Break",
+   "label": "DESCRIPCI\u00d3N"
+  },
+  {
+   "fieldname": "narrativa_de_los_hechos",
+   "fieldtype": "Text Editor",
+   "label": "NARRATIVA DE LOS HECHOS"
+  },
+  {
+   "fieldname": "narrativa_tab",
+   "fieldtype": "Tab Break",
+   "label": "NARRATIVA"
+  },
+  {
+   "fieldname": "firmas_section",
+   "fieldtype": "Section Break",
+   "label": "FIRMAS"
+  },
+  {
+   "fieldname": "agente_de_movilidad",
+   "fieldtype": "Signature",
+   "label": "AGENTE DE MOVILIDAD"
+  },
+  {
+   "fieldname": "column_break_iomy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comandante_en_turno",
+   "fieldtype": "Signature",
+   "label": "COMANDANTE EN TURNO"
+  },
+  {
+   "fieldname": "hospitalizados",
+   "fieldtype": "Data",
+   "label": "HOSPITALIZADOS",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "peaton",
+   "fieldtype": "Check",
+   "label": "PEATON"
+  },
+  {
+   "default": "0",
+   "fieldname": "bicicleta",
+   "fieldtype": "Check",
+   "label": "BICICLETA"
+  },
+  {
+   "default": "0",
+   "fieldname": "autobus",
+   "fieldtype": "Check",
+   "label": "AUTOBUS"
+  },
+  {
+   "default": "0",
+   "fieldname": "combi",
+   "fieldtype": "Check",
+   "label": "COMBI"
+  },
+  {
+   "fieldname": "column_break_kggu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "taxi",
+   "fieldtype": "Check",
+   "label": "TAXI"
+  },
+  {
+   "default": "0",
+   "fieldname": "camion_de_carga",
+   "fieldtype": "Check",
+   "label": "CAMION DE CARGA"
+  },
+  {
+   "default": "0",
+   "fieldname": "automovil_particular",
+   "fieldtype": "Check",
+   "label": "AUTOMOVIL PARTICULAR"
+  },
+  {
+   "default": "0",
+   "fieldname": "motocicleta",
+   "fieldtype": "Check",
+   "label": "MOTOCICLETA"
+  },
+  {
+   "depends_on": "eval:doc.tipo_de_accidente == 'OTROS ACCIDENTES'",
+   "fieldname": "otro_accidente",
+   "fieldtype": "Data",
+   "label": "OTRO ACCIDENTE"
+  },
+  {
+   "depends_on": "eval:doc.causa == 'OTRAS CAUSAS'",
+   "fieldname": "otra_causa",
+   "fieldtype": "Data",
+   "label": "OTRA CAUSA"
+  },
+  {
+   "fieldname": "vehiculos",
+   "fieldtype": "Table",
+   "label": "VEHICULOS",
+   "options": "VEHICULOS ACCIDENTE"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-30 13:32:35.520325",
+ "modified": "2023-12-11 09:09:29.708963",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "ACCIDENTE",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -186,5 +438,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

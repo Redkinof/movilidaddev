@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class LESIONADOSACCIDENTE(Document):
+class PEATONOCICLISTA(Document):
 	pass

@@ -1,6 +1,11 @@
 {
- "charts": [],
- "content": "[{\"id\":\"q6bZCwSwbY\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Operativos</span>\",\"col\":12}},{\"id\":\"N-LcXEbWg0\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"PinHrKJsBG\",\"type\":\"paragraph\",\"data\":{\"text\":\"Este apartado es el de operativos\",\"col\":12}},{\"id\":\"0IrTC149mJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Funciones\",\"col\":4}}]",
+ "charts": [
+  {
+   "chart_name": "Accidentes mes",
+   "label": "Accidentes Mes"
+  }
+ ],
+ "content": "[{\"id\":\"q6bZCwSwbY\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Operativos</span>\",\"col\":12}},{\"id\":\"N-LcXEbWg0\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"82pvk1_zCl\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Accidentes Mes\",\"col\":12}},{\"id\":\"9sDz6kzkLD\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"PinHrKJsBG\",\"type\":\"paragraph\",\"data\":{\"text\":\"Este apartado es el de operativos\",\"col\":12}},{\"id\":\"0IrTC149mJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Funciones\",\"col\":4}},{\"id\":\"fE5F7GiaJn\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"ACCIDENTE\",\"col\":4}}]",
  "creation": "2023-11-28 12:59:26.278403",
  "custom_blocks": [],
  "docstatus": 0,
@@ -52,7 +57,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-11-30 13:15:50.082389",
+ "modified": "2023-12-08 15:43:02.441370",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "Operativos",
@@ -60,7 +65,13 @@
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "quick_lists": [],
+ "quick_lists": [
+  {
+   "document_type": "ACCIDENTE",
+   "label": "ACCIDENTE",
+   "quick_list_filter": "[]"
+  }
+ ],
  "roles": [],
  "sequence_id": 1.0,
  "shortcuts": [],

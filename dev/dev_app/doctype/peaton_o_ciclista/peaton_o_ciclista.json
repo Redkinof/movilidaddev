@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-24 13:36:13.119063",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre",
+  "domicilio",
+  "edad",
+  "column_break_jdxn",
+  "tel\u00e9fono",
+  "sexo",
+  "lesionado",
+  "hospitalizacion",
+  "fallecido"
+ ],
+ "fields": [
+  {
+   "default": "S/D",
+   "fieldname": "sexo",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "G\u00c9NERO",
+   "options": "FEMENINO\nMASCULINO\nS/D"
+  },
+  {
+   "fieldname": "column_break_jdxn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NOMBRE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "domicilio",
+   "fieldtype": "Data",
+   "label": "DOMICILIO"
+  },
+  {
+   "fieldname": "edad",
+   "fieldtype": "Int",
+   "label": "EDAD"
+  },
+  {
+   "fieldname": "tel\u00e9fono",
+   "fieldtype": "Data",
+   "label": "TEL\u00c9FONO"
+  },
+  {
+   "default": "0",
+   "fieldname": "lesionado",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "LESIONADO"
+  },
+  {
+   "default": "0",
+   "fieldname": "fallecido",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "FALLECIDO"
+  },
+  {
+   "default": "0",
+   "fieldname": "hospitalizacion",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "HOSPITALIZACI\u00d3N"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-11 15:38:13.384895",
+ "modified_by": "Administrator",
+ "module": "Dev app",
+ "name": "PEATON O CICLISTA",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

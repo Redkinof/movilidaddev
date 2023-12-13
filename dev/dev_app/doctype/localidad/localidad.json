@@ -20,6 +20,7 @@
    "fieldname": "municipio",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Municipio",
    "options": "MUNICIPIO",
    "reqd": 1
@@ -38,7 +39,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-30 15:26:04.804503",
+ "modified": "2023-12-06 08:52:43.228838",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "LOCALIDAD",
