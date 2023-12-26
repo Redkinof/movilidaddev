@@ -9,26 +9,29 @@
   "vehiculo_section",
   "vehiculo",
   "propietario",
+  "domicilio_vehiculo",
   "tipo_servicio",
   "placa",
-  "tipo_de_vehiculo",
+  "serie_vehiculo",
   "column_break_wjrp",
-  "estado",
-  "noecon\u00f3mino",
-  "modelo",
-  "tipo_auto",
-  "clase",
-  "column_break_ygzc",
-  "permiso",
-  "seguro",
-  "color",
-  "otro_color",
   "marca",
   "sub_marca",
+  "municipio",
+  "noeconomico",
+  "modelo",
+  "tipo_auto",
+  "column_break_ygzc",
+  "permiso",
+  "color",
+  "otro_color",
+  "tipo_de_vehiculo",
+  "otros",
+  "seguro",
+  "uso_de_grua",
   "conductor_section",
   "nombre_conductor",
-  "domicilio",
-  "tel\u00e9fono",
+  "domicilio_conductor",
+  "telefono",
   "genero",
   "edad",
   "column_break_omfo",
@@ -36,8 +39,7 @@
   "tipo",
   "vigencia",
   "entidad",
-  "lesionado",
-  "uso_de_grua"
+  "lesionado"
  ],
  "fields": [
   {
@@ -47,21 +49,9 @@
    "options": "PICK UP\nSUV\nSEDAN\nMOTOCICLETA\nBICICLETA\nCAMION DE PASAJEROS\nTRACTOCAMION\nPIPA\nCAMIONETA DE CARGA\nCAMION DE CARGA TIPO TORTON\nCAMION DE CARGA TIPO VOLTEO\nBICICLETA\nSE DIO A LA FUGA\nOTROS"
   },
   {
-   "fieldname": "clase",
-   "fieldtype": "Select",
-   "label": "CLASE",
-   "options": "FATAL\nNO FATAL (HERIDOS)\nSOLO DA\u00d1OS\nASEGURACION DE VEHICULO"
-  },
-  {
-   "fieldname": "estado",
-   "fieldtype": "Select",
-   "label": "ESTADO",
-   "options": "AGUASCALIENTES\nBAJA CALIFORNIA\nBAJA CALIFORNIA SUR\nCAMPECHE\nCHIAPAS\nCHIHUAHUA\nCOAHUILA\nCOLIMA\nDISTRITO FEDERAL\nDURANGO\nGUANAJUATO\nGUERRERO\nHIDALGO\nJALISCO\nM\u00c9XICO\nMICHOAC\u00c1N\nMORELOS\nNAYARIT\nNUEVO LE\u00d3N\nOAXACA\nPUEBLA\nQUER\u00c9TARO\nQUINTANA ROO\nSAN LUIS POTOS\u00cd\nSINALOA\nSONORA\nTABASCO\nTAMAULIPAS\nTLAXCALA\nVERACRUZ\nYUCAT\u00c1N\nZACATECAS\nSIN INFORMACION\nEXTRANJERO\nFEDERAL"
-  },
-  {
    "fieldname": "vehiculo_section",
    "fieldtype": "Section Break",
-   "label": "VEHICULO"
+   "label": "VEH\u00cdCULO"
   },
   {
    "fieldname": "column_break_wjrp",
@@ -71,16 +61,6 @@
    "fieldname": "conductor_section",
    "fieldtype": "Section Break",
    "label": "CONDUCTOR"
-  },
-  {
-   "fieldname": "domicilio",
-   "fieldtype": "Data",
-   "label": "DOMICILIO"
-  },
-  {
-   "fieldname": "tel\u00e9fono",
-   "fieldtype": "Data",
-   "label": "TEL\u00c9FONO"
   },
   {
    "fieldname": "genero",
@@ -133,8 +113,9 @@
   {
    "fieldname": "vehiculo",
    "fieldtype": "Select",
-   "label": "VEHICULO",
-   "options": "TRANPORTE PUBLICO\nCARGA\nESPECIALIZADO\nPARTICULAR"
+   "in_list_view": 1,
+   "label": "VEH\u00cdCULO",
+   "options": "TRASNPORTE PUBLICO\nCARGA\nESPECIALIZADO\nPARTICULAR"
   },
   {
    "fieldname": "propietario",
@@ -155,12 +136,6 @@
    "label": "PLACA"
   },
   {
-   "fieldname": "noecon\u00f3mino",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "No.ECON\u00d3MINO"
-  },
-  {
    "fieldname": "modelo",
    "fieldtype": "Data",
    "label": "MODELO"
@@ -175,9 +150,8 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "0",
    "fieldname": "permiso",
-   "fieldtype": "Check",
+   "fieldtype": "Data",
    "label": "PERMISO"
   },
   {
@@ -214,12 +188,50 @@
    "in_list_view": 1,
    "label": "NOMBRE CONDUCTOR",
    "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.tipo_de_vehiculo == 'OTROS'",
+   "fieldname": "otros",
+   "fieldtype": "Data",
+   "label": "OTROS"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "TEL\u00c9FONO"
+  },
+  {
+   "fieldname": "domicilio_vehiculo",
+   "fieldtype": "Data",
+   "label": "DOMICILIO VEH\u00cdCULO"
+  },
+  {
+   "fieldname": "municipio",
+   "fieldtype": "Select",
+   "label": "MUNICIPIO",
+   "options": "MUNICIPIO"
+  },
+  {
+   "fieldname": "domicilio_conductor",
+   "fieldtype": "Data",
+   "label": "DOMICILIO CONDUCTOR"
+  },
+  {
+   "fieldname": "noeconomico",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No.ECON\u00d3MICO"
+  },
+  {
+   "fieldname": "serie_vehiculo",
+   "fieldtype": "Data",
+   "label": "SERIE VEH\u00cdCULO"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-12-08 15:35:43.303243",
+ "modified": "2023-12-21 11:30:17.574424",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "VEHICULOS ACCIDENTE",

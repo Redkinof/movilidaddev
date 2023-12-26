@@ -10,21 +10,13 @@
   "domicilio",
   "edad",
   "column_break_jdxn",
-  "tel\u00e9fono",
-  "sexo",
+  "telefono",
+  "genero",
   "lesionado",
   "hospitalizacion",
   "fallecido"
  ],
  "fields": [
-  {
-   "default": "S/D",
-   "fieldname": "sexo",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "G\u00c9NERO",
-   "options": "FEMENINO\nMASCULINO\nS/D"
-  },
   {
    "fieldname": "column_break_jdxn",
    "fieldtype": "Column Break"
@@ -47,11 +39,6 @@
    "label": "EDAD"
   },
   {
-   "fieldname": "tel\u00e9fono",
-   "fieldtype": "Data",
-   "label": "TEL\u00c9FONO"
-  },
-  {
    "default": "0",
    "fieldname": "lesionado",
    "fieldtype": "Check",
@@ -71,12 +58,25 @@
    "fieldtype": "Check",
    "in_list_view": 1,
    "label": "HOSPITALIZACI\u00d3N"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "TEL\u00c9FONO"
+  },
+  {
+   "default": "S/D",
+   "fieldname": "genero",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "G\u00c9NERO",
+   "options": "FEMENINO\nMASCULINO\nS/D"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-12-11 15:38:13.384895",
+ "modified": "2023-12-13 12:43:22.071115",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "PEATON O CICLISTA",

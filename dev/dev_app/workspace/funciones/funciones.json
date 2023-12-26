@@ -1,0 +1,38 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"PodZOBUOVO\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Funciones</span>\",\"col\":12}},{\"id\":\"CRypt6VEH6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"NcROCvGe0y\",\"type\":\"spacer\",\"data\":{\"col\":5}},{\"id\":\"MiJh0hS46O\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Boton Agregar\",\"col\":2}}]",
+ "creation": "2023-12-14 10:35:01.539540",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Boton Agregar",
+   "label": "Boton Agregar"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Funciones",
+ "links": [],
+ "modified": "2023-12-18 12:11:58.764078",
+ "modified_by": "Administrator",
+ "module": "Dev app",
+ "name": "Funciones",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Operativo Captura"
+  }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "Funciones"
+}

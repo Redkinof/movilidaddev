@@ -7,6 +7,12 @@
  "engine": "InnoDB",
  "field_order": [
   "detalles_tab",
+  "datos_del_agente_section",
+  "nombre",
+  "delegacion",
+  "column_break_jfxl",
+  "nopatrulla",
+  "identificacion_agente",
   "informacion_section",
   "fecha_y_hora",
   "municipio",
@@ -18,16 +24,23 @@
   "entre_calle",
   "participantes_section",
   "peaton",
+  "column_break_tfzd",
   "bicicleta",
+  "column_break_mfla",
   "autobus",
   "combi",
-  "column_break_kggu",
   "taxi",
+  "column_break_ejgw",
   "camion_de_carga",
+  "column_break_scem",
   "automovil_particular",
   "motocicleta",
-  "mapa_accidente_section",
-  "latitud_y_longitud",
+  "vehiculos_section",
+  "vehiculos",
+  "peatones_o_ciclistas_section",
+  "peaton_o_ciclista",
+  "narrativa_section",
+  "narrativa_de_los_hechos",
   "datos_accidente_section",
   "tipo_de_accidente",
   "otro_accidente",
@@ -37,11 +50,6 @@
   "column_break_vety",
   "rh",
   "delito",
-  "accidente_tab",
-  "vehiculos_section",
-  "vehiculos",
-  "peatones_o_ciclistas_section",
-  "peaton_o_ciclista",
   "costos_section",
   "valoracion_de_danos",
   "total_de_vehiculos_participantes",
@@ -49,22 +57,15 @@
   "column_break_etpf",
   "fallecidos",
   "hospitalizados",
-  "solo_da\u00f1os",
+  "solo_danos",
+  "mapa_accidente_section",
+  "latitud_y_longitud",
   "datos_del_primer_responsable_section",
   "nombre_responsable",
-  "\u00e1rea",
+  "area",
   "column_break_ciil",
   "no_de_unidad",
-  "identificacion",
-  "datos_del_agente_section",
-  "nombre",
-  "delegaci\u00f3n",
-  "column_break_jfxl",
-  "nopatrulla",
-  "identificaci\u00f3n",
-  "narrativa_tab",
-  "descripci\u00f3n_section",
-  "narrativa_de_los_hechos",
+  "identificacion_respondiente",
   "firmas_section",
   "agente_de_movilidad",
   "column_break_iomy",
@@ -128,11 +129,6 @@
    "label": "LATITUD Y LONGITUD"
   },
   {
-   "fieldname": "accidente_tab",
-   "fieldtype": "Tab Break",
-   "label": "ACCIDENTE"
-  },
-  {
    "fieldname": "datos_accidente_section",
    "fieldtype": "Section Break",
    "label": "DATOS ACCIDENTE"
@@ -187,11 +183,6 @@
    "label": "NOMBRE"
   },
   {
-   "fieldname": "delegaci\u00f3n",
-   "fieldtype": "Data",
-   "label": "DELEGACI\u00d3N"
-  },
-  {
    "fieldname": "column_break_jfxl",
    "fieldtype": "Column Break"
   },
@@ -199,11 +190,6 @@
    "fieldname": "nopatrulla",
    "fieldtype": "Data",
    "label": "No.PATRULLA"
-  },
-  {
-   "fieldname": "identificaci\u00f3n",
-   "fieldtype": "Data",
-   "label": "IDENTIFICACI\u00d3N"
   },
   {
    "fieldname": "participantes_section",
@@ -266,12 +252,6 @@
    "read_only": 1
   },
   {
-   "default": "0",
-   "fieldname": "solo_da\u00f1os",
-   "fieldtype": "Check",
-   "label": "SOLO DA\u00d1OS"
-  },
-  {
    "fieldname": "datos_del_primer_responsable_section",
    "fieldtype": "Section Break",
    "label": "DATOS DEL PRIMER RESPONDIENTE"
@@ -281,11 +261,6 @@
    "fieldtype": "Data",
    "label": "NOMBRE RESPONSABLE",
    "reqd": 1
-  },
-  {
-   "fieldname": "\u00e1rea",
-   "fieldtype": "Data",
-   "label": "\u00c1REA"
   },
   {
    "fieldname": "column_break_ciil",
@@ -298,25 +273,9 @@
    "reqd": 1
   },
   {
-   "fieldname": "identificacion",
-   "fieldtype": "Data",
-   "label": "IDENTIFICACION",
-   "reqd": 1
-  },
-  {
-   "fieldname": "descripci\u00f3n_section",
-   "fieldtype": "Section Break",
-   "label": "DESCRIPCI\u00d3N"
-  },
-  {
    "fieldname": "narrativa_de_los_hechos",
    "fieldtype": "Text Editor",
    "label": "NARRATIVA DE LOS HECHOS"
-  },
-  {
-   "fieldname": "narrativa_tab",
-   "fieldtype": "Tab Break",
-   "label": "NARRATIVA"
   },
   {
    "fieldname": "firmas_section",
@@ -326,7 +285,8 @@
   {
    "fieldname": "agente_de_movilidad",
    "fieldtype": "Signature",
-   "label": "AGENTE DE MOVILIDAD"
+   "label": "AGENTE DE MOVILIDAD",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_iomy",
@@ -347,7 +307,7 @@
    "default": "0",
    "fieldname": "peaton",
    "fieldtype": "Check",
-   "label": "PEATON"
+   "label": "PEAT\u00d3N"
   },
   {
    "default": "0",
@@ -359,17 +319,13 @@
    "default": "0",
    "fieldname": "autobus",
    "fieldtype": "Check",
-   "label": "AUTOBUS"
+   "label": "AUTOB\u00daS"
   },
   {
    "default": "0",
    "fieldname": "combi",
    "fieldtype": "Check",
    "label": "COMBI"
-  },
-  {
-   "fieldname": "column_break_kggu",
-   "fieldtype": "Column Break"
   },
   {
    "default": "0",
@@ -381,7 +337,7 @@
    "default": "0",
    "fieldname": "camion_de_carga",
    "fieldtype": "Check",
-   "label": "CAMION DE CARGA"
+   "label": "CAMI\u00d3N DE CARGA"
   },
   {
    "default": "0",
@@ -412,11 +368,60 @@
    "fieldtype": "Table",
    "label": "VEHICULOS",
    "options": "VEHICULOS ACCIDENTE"
+  },
+  {
+   "default": "0",
+   "fieldname": "solo_danos",
+   "fieldtype": "Check",
+   "label": "SOLO DA\u00d1OS"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "\u00c1REA"
+  },
+  {
+   "fieldname": "delegacion",
+   "fieldtype": "Data",
+   "label": "DELEGACI\u00d3N"
+  },
+  {
+   "fieldname": "column_break_tfzd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mfla",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ejgw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_scem",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "identificacion_respondiente",
+   "fieldtype": "Data",
+   "label": "IDENTIFICACI\u00d3N RESPONDIENTE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "identificacion_agente",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "IDENTIFICACI\u00d3N AGENTE"
+  },
+  {
+   "fieldname": "narrativa_section",
+   "fieldtype": "Section Break",
+   "label": "NARRATIVA"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-11 09:09:29.708963",
+ "modified": "2023-12-21 11:33:17.173258",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "ACCIDENTE",
