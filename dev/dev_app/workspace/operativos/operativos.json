@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"PodZOBUOVO\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Funciones</span>\",\"col\":12}},{\"id\":\"CRypt6VEH6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"NcROCvGe0y\",\"type\":\"spacer\",\"data\":{\"col\":5}},{\"id\":\"MiJh0hS46O\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Boton Agregar\",\"col\":2}}]",
+ "content": "[{\"id\":\"PodZOBUOVO\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Operativos</span>\",\"col\":12}},{\"id\":\"CRypt6VEH6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"NcROCvGe0y\",\"type\":\"spacer\",\"data\":{\"col\":5}},{\"id\":\"MiJh0hS46O\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Boton Agregar\",\"col\":2}}]",
  "creation": "2023-12-14 10:35:01.539540",
  "custom_blocks": [
   {
@@ -16,12 +16,12 @@
  "idx": 0,
  "indicator_color": "green",
  "is_hidden": 0,
- "label": "Funciones",
+ "label": "Operativos",
  "links": [],
- "modified": "2023-12-18 12:11:58.764078",
+ "modified": "2023-12-29 09:19:25.774709",
  "modified_by": "Administrator",
  "module": "Dev app",
- "name": "Funciones",
+ "name": "Operativos",
  "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
@@ -34,5 +34,5 @@
  ],
  "sequence_id": 1.0,
  "shortcuts": [],
- "title": "Funciones"
+ "title": "Operativos"
 }

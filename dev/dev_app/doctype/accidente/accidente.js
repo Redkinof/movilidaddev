@@ -60,13 +60,13 @@ frappe.ui.form.on("ACCIDENTE", {
 	// 	// }
 	// },
 	refresh(frm) {
-		frm.toggle_enable(campos, frm.doc.workflow_state === 'Revision');
+		/*frm.toggle_enable(campos, frm.doc.workflow_state === 'Revision');
 		if (frm.doc.workflow_state === 'Revision'){
 			// frm.set_df_property('comandante_en_turno', 'reqd', 1)
 		}
 		if (frm.doc.workflow_state === 'Espera Pago'){
 			frm.set_df_property('comandante_en_turno', 'read_only', 1)
-		}
+		}*/
 
         frm.get_field("latitud_y_longitud").map.setView([21.485202, -104.877471],13);
 		frm.fields_dict.localidad.get_query = function(doc) {

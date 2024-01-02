@@ -47,9 +47,6 @@
   "causa",
   "otra_causa",
   "clase",
-  "column_break_vety",
-  "rh",
-  "delito",
   "costos_section",
   "valoracion_de_danos",
   "total_de_vehiculos_participantes",
@@ -87,7 +84,8 @@
    "fieldtype": "Datetime",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "FECHA Y HORA"
+   "label": "FECHA Y HORA",
+   "reqd": 1
   },
   {
    "depends_on": "municipio",
@@ -95,14 +93,16 @@
    "fieldname": "localidad",
    "fieldtype": "Link",
    "label": "LOCALIDAD",
-   "options": "LOCALIDAD"
+   "options": "LOCALIDAD",
+   "reqd": 1
   },
   {
    "fieldname": "municipio",
    "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "MUNICIPIO",
-   "options": "MUNICIPIO"
+   "options": "MUNICIPIO",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_ccrj",
@@ -111,12 +111,14 @@
   {
    "fieldname": "colonia",
    "fieldtype": "Data",
-   "label": "COLONIA"
+   "label": "COLONIA",
+   "reqd": 1
   },
   {
    "fieldname": "entre_calle",
    "fieldtype": "Data",
-   "label": "ENTRE CALLE"
+   "label": "ENTRE CALLE",
+   "reqd": 1
   },
   {
    "fieldname": "mapa_accidente_section",
@@ -137,7 +139,8 @@
    "fieldname": "causa",
    "fieldtype": "Select",
    "label": "CAUSA",
-   "options": "CONDUCTOR\nPEATON O PASAJERO\nFALLA DE VEHICULO\nMALA CONDICION DE CAMINO\nCONDUCIR EBRIO\nOTRAS CAUSAS"
+   "options": "CONDUCTOR\nPEATON O PASAJERO\nFALLA DE VEHICULO\nMALA CONDICION DE CAMINO\nCONDUCIR EBRIO\nOTRAS CAUSAS",
+   "reqd": 1
   },
   {
    "fieldname": "tipo_de_accidente",
@@ -150,22 +153,14 @@
    "fieldname": "clase",
    "fieldtype": "Select",
    "label": "CLASE",
-   "options": "FATAL\nNO FATAL (HERIDOS)\nSOLO DA\u00d1OS\nASEGURACION DE VEHICULO"
+   "options": "FATAL\nNO FATAL (HERIDOS)\nSOLO DA\u00d1OS\nASEGURACION DE VEHICULO",
+   "reqd": 1
   },
   {
    "fieldname": "valoracion_de_danos",
    "fieldtype": "Data",
-   "label": "VALORACION DE DA\u00d1OS"
-  },
-  {
-   "fieldname": "rh",
-   "fieldtype": "Data",
-   "label": "RH"
-  },
-  {
-   "fieldname": "delito",
-   "fieldtype": "Data",
-   "label": "DELITO"
+   "label": "VALORACION DE DA\u00d1OS",
+   "reqd": 1
   },
   {
    "fieldname": "vehiculos_section",
@@ -180,7 +175,8 @@
   {
    "fieldname": "nombre",
    "fieldtype": "Data",
-   "label": "NOMBRE"
+   "label": "NOMBRE",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_jfxl",
@@ -189,7 +185,8 @@
   {
    "fieldname": "nopatrulla",
    "fieldtype": "Data",
-   "label": "No.PATRULLA"
+   "label": "No.PATRULLA",
+   "reqd": 1
   },
   {
    "fieldname": "participantes_section",
@@ -207,7 +204,8 @@
   {
    "fieldname": "calle_y_no",
    "fieldtype": "Data",
-   "label": "CALLE Y No."
+   "label": "CALLE Y No.",
+   "reqd": 1
   },
   {
    "fieldname": "peatones_o_ciclistas_section",
@@ -219,10 +217,6 @@
    "fieldtype": "Table",
    "label": "PEATON O CICLISTA",
    "options": "PEATON O CICLISTA"
-  },
-  {
-   "fieldname": "column_break_vety",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "costos_section",
@@ -275,7 +269,8 @@
   {
    "fieldname": "narrativa_de_los_hechos",
    "fieldtype": "Text Editor",
-   "label": "NARRATIVA DE LOS HECHOS"
+   "label": "NARRATIVA DE LOS HECHOS",
+   "reqd": 1
   },
   {
    "fieldname": "firmas_section",
@@ -378,12 +373,14 @@
   {
    "fieldname": "area",
    "fieldtype": "Data",
-   "label": "\u00c1REA"
+   "label": "\u00c1REA",
+   "reqd": 1
   },
   {
    "fieldname": "delegacion",
    "fieldtype": "Data",
-   "label": "DELEGACI\u00d3N"
+   "label": "DELEGACI\u00d3N",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_tfzd",
@@ -411,7 +408,8 @@
    "fieldname": "identificacion_agente",
    "fieldtype": "Data",
    "in_standard_filter": 1,
-   "label": "IDENTIFICACI\u00d3N AGENTE"
+   "label": "IDENTIFICACI\u00d3N AGENTE",
+   "reqd": 1
   },
   {
    "fieldname": "narrativa_section",
@@ -421,7 +419,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-21 11:33:17.173258",
+ "modified": "2023-12-29 08:46:01.674393",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "ACCIDENTE",
