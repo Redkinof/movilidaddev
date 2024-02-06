@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-24 15:38:13.483152",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "datos_domicilio_section",
+  "comprobante_de_domicilio",
+  "calle",
+  "numero_exterior",
+  "numero_interior",
+  "column_break_focr",
+  "municipio",
+  "localidad",
+  "colonia",
+  "codigo_postal"
+ ],
+ "fields": [
+  {
+   "fieldname": "datos_domicilio_section",
+   "fieldtype": "Section Break",
+   "label": "DATOS DOMICILIO"
+  },
+  {
+   "fieldname": "comprobante_de_domicilio",
+   "fieldtype": "Attach",
+   "label": "COMPROBANTE DE DOMICILIO"
+  },
+  {
+   "fieldname": "calle",
+   "fieldtype": "Data",
+   "label": "CALLE"
+  },
+  {
+   "fieldname": "numero_exterior",
+   "fieldtype": "Data",
+   "label": "NUMERO EXTERIOR"
+  },
+  {
+   "fieldname": "numero_interior",
+   "fieldtype": "Data",
+   "label": "NUMERO INTERIOR"
+  },
+  {
+   "fieldname": "column_break_focr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "municipio",
+   "fieldtype": "Link",
+   "label": "MUNICIPIO",
+   "options": "MUNICIPIO"
+  },
+  {
+   "fieldname": "localidad",
+   "fieldtype": "Link",
+   "label": "LOCALIDAD",
+   "options": "LOCALIDAD"
+  },
+  {
+   "fieldname": "colonia",
+   "fieldtype": "Data",
+   "label": "COLONIA"
+  },
+  {
+   "fieldname": "codigo_postal",
+   "fieldtype": "Data",
+   "label": "CODIGO POSTAL"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-24 15:45:46.926788",
+ "modified_by": "Administrator",
+ "module": "Dev app",
+ "name": "DOMICILIO",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

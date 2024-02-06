@@ -218,7 +218,7 @@
   },
   {
    "fieldname": "municipio",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "MUNICIPIO",
    "options": "MUNICIPIO",
    "reqd": 1
@@ -269,7 +269,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-12-29 09:24:03.148776",
+ "modified": "2024-01-24 13:53:55.321660",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "VEHICULOS ACCIDENTE",

@@ -1,0 +1,218 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "AC-####",
+ "creation": "2024-01-25 10:09:04.281079",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "antiguedad_section",
+  "fecha_de_registro",
+  "apellido_paterno",
+  "apellido_materno",
+  "nombre",
+  "genero",
+  "telefono_celular",
+  "column_break_oipq",
+  "curp",
+  "clave_de_elector",
+  "no_seguro_social",
+  "domicilio",
+  "no_de_licencia",
+  "tipo_de_licencia",
+  "comprobantes_section",
+  "oficio_de_sindicato",
+  "constancia_imss",
+  "recibos_de_pago_de_organizacion",
+  "column_break_xnnv",
+  "constancia_expedida_por_concesionario",
+  "antiguedad",
+  "fecha_inicio_de_registro",
+  "a\u00f1o_antiguedad",
+  "carga_documentos_section",
+  "ine",
+  "licencia_de_conducir",
+  "column_break_qsvi",
+  "comprobante_de_antiguedad",
+  "comprobante_de_domicilio"
+ ],
+ "fields": [
+  {
+   "fieldname": "antiguedad_section",
+   "fieldtype": "Section Break",
+   "label": "ANTIGUEDAD"
+  },
+  {
+   "fieldname": "fecha_de_registro",
+   "fieldtype": "Date",
+   "label": "FECHA DE REGISTRO"
+  },
+  {
+   "fieldname": "apellido_paterno",
+   "fieldtype": "Data",
+   "label": "APELLIDO PATERNO"
+  },
+  {
+   "fieldname": "apellido_materno",
+   "fieldtype": "Data",
+   "label": "APELLIDO MATERNO"
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "NOMBRE"
+  },
+  {
+   "fieldname": "genero",
+   "fieldtype": "Select",
+   "label": "G\u00c9NERO",
+   "options": "HOMBRE\nMUJER\nSG"
+  },
+  {
+   "fieldname": "telefono_celular",
+   "fieldtype": "Data",
+   "label": "TEL\u00c9FONO CELULAR"
+  },
+  {
+   "fieldname": "column_break_oipq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "curp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "CURP",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clave_de_elector",
+   "fieldtype": "Data",
+   "label": "CLAVE DE ELECTOR"
+  },
+  {
+   "fieldname": "no_seguro_social",
+   "fieldtype": "Data",
+   "label": "N\u00b0 SEGURO SOCIAL"
+  },
+  {
+   "fieldname": "domicilio",
+   "fieldtype": "Link",
+   "label": "DOMICILIO",
+   "options": "DOMICILIO"
+  },
+  {
+   "fieldname": "no_de_licencia",
+   "fieldtype": "Data",
+   "label": "N\u00b0 DE LICENCIA"
+  },
+  {
+   "fieldname": "tipo_de_licencia",
+   "fieldtype": "Select",
+   "label": "TIPO DE LICENCIA",
+   "options": "AUTOMOVILISTA\nCHOFER\nMOTOCICLISTA\nPERMISO PARA MENOR"
+  },
+  {
+   "fieldname": "comprobantes_section",
+   "fieldtype": "Section Break",
+   "label": "COMPROBANTES"
+  },
+  {
+   "fieldname": "oficio_de_sindicato",
+   "fieldtype": "Attach",
+   "label": "OFICIO DE SINDICATO"
+  },
+  {
+   "fieldname": "constancia_imss",
+   "fieldtype": "Attach",
+   "label": "CONSTANCIA IMSS"
+  },
+  {
+   "fieldname": "recibos_de_pago_de_organizacion",
+   "fieldtype": "Attach",
+   "label": "RECIBOS DE PAGO DE ORGANIZACION"
+  },
+  {
+   "fieldname": "column_break_xnnv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "constancia_expedida_por_concesionario",
+   "fieldtype": "Attach",
+   "label": "CONSTANCIA EXPEDIDA POR CONCESIONARIO"
+  },
+  {
+   "fieldname": "antiguedad",
+   "fieldtype": "Attach",
+   "label": "ANTIGUEDAD"
+  },
+  {
+   "fieldname": "fecha_inicio_de_registro",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "FECHA INICIO DE REGISTRO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "carga_documentos_section",
+   "fieldtype": "Section Break",
+   "label": "CARGA DOCUMENTOS"
+  },
+  {
+   "fieldname": "ine",
+   "fieldtype": "Attach",
+   "label": "INE"
+  },
+  {
+   "fieldname": "licencia_de_conducir",
+   "fieldtype": "Attach",
+   "label": "LICENCIA DE CONDUCIR"
+  },
+  {
+   "fieldname": "column_break_qsvi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comprobante_de_antiguedad",
+   "fieldtype": "Attach",
+   "label": "COMPROBANTE DE ANTIGUEDAD"
+  },
+  {
+   "fieldname": "comprobante_de_domicilio",
+   "fieldtype": "Attach",
+   "label": "COMPROBANTE DE DOMICILIO"
+  },
+  {
+   "depends_on": "fecha_inicio_de_registro",
+   "fieldname": "a\u00f1o_antiguedad",
+   "fieldtype": "Data",
+   "label": "A\u00d1O ANTIGUEDAD",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-06 08:44:34.515907",
+ "modified_by": "Administrator",
+ "module": "Dev app",
+ "name": "ANTIGUEDAD DE CHOFERES",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
