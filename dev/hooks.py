@@ -9,6 +9,11 @@ app_license = "mit"
 # Includes in <head>
 # ------------------
 
+# FIXTURES
+fixtures = [
+    "Custom HTML Block"
+]
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/dev/css/dev.css"
 # app_include_js = "/assets/dev/js/dev.js"

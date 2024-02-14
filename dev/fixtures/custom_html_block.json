@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<button type=\"button\" class=\"btn btn-success succ\">Agregar Accidente</button>",
+  "modified": "2024-01-15 08:29:34.562562",
+  "name": "Boton Agregar",
+  "private": 0,
+  "roles": [],
+  "script": "let some_class_element = root_element.querySelector('.succ');\r\nsome_class_element.onclick = function() {\r\nfrappe.set_route(\"/app/accidente/new-accidente\");\r\n};",
+  "style": null
+ }
+]
