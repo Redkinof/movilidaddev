@@ -28,7 +28,7 @@
   "constancia_expedida_por_concesionario",
   "antiguedad",
   "fecha_inicio_de_registro",
-  "a\u00f1o_antiguedad",
+  "dias_de_antiguedad",
   "carga_documentos_section",
   "ine",
   "licencia_de_conducir",
@@ -184,15 +184,15 @@
   },
   {
    "depends_on": "fecha_inicio_de_registro",
-   "fieldname": "a\u00f1o_antiguedad",
+   "fieldname": "dias_de_antiguedad",
    "fieldtype": "Data",
-   "label": "A\u00d1O ANTIGUEDAD",
+   "label": "DIAS DE ANTIGUEDAD",
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-06 08:44:34.515907",
+ "modified": "2024-02-20 10:03:39.380575",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "ANTIGUEDAD DE CHOFERES",
