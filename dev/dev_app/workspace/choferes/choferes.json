@@ -1,0 +1,38 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"d7jL3McaxM\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Choferes</span>\",\"col\":12}},{\"id\":\"eP-S-plI-0\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"oxyxnYOMcm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Antiguedad De Choferes\",\"col\":3}}]",
+ "creation": "2024-02-21 14:17:06.882875",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "link-url",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Choferes",
+ "links": [],
+ "modified": "2024-02-22 10:47:17.180979",
+ "modified_by": "Administrator",
+ "module": "Dev app",
+ "name": "Choferes",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Licencias",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Antiguedad De Choferes",
+   "link_to": "Antiguedad de choferes",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Choferes"
+}
