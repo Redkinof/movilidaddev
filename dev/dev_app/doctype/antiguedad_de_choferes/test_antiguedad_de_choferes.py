@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestANTIGUEDADDECHOFERES(FrappeTestCase):
+class TestAntiguedaddechoferes(FrappeTestCase):
 	pass

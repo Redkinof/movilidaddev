@@ -45,7 +45,7 @@ var campos = [
 	'agente_de_movilidad',
 ];
 
-frappe.ui.form.on("ACCIDENTE", {
+frappe.ui.form.on("Accidente", {
 	// onload(frm){
 	// 	frm.toggle_enable(campos, frm.doc.workflow_state === 'Revision');
 	// 	if (frm.doc.workflow_state === 'Revision'){

@@ -5,18 +5,18 @@
    "label": "Accidentes mes"
   }
  ],
- "content": "[{\"id\":\"FgdrQMBDpx\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Administrativos</span>\",\"col\":12}},{\"id\":\"hs3r67X5nC\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Qg7_dT7Q6U\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Accidentes mes\",\"col\":12}},{\"id\":\"qOfYhVDDB-\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"lPsctEF8ZK\",\"type\":\"card\",\"data\":{\"card_name\":\"Funciones\",\"col\":4}}]",
+ "content": "[{\"id\":\"FgdrQMBDpx\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Accidentes</span>\",\"col\":12}},{\"id\":\"hs3r67X5nC\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Qg7_dT7Q6U\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Accidentes mes\",\"col\":12}},{\"id\":\"qOfYhVDDB-\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"lPsctEF8ZK\",\"type\":\"card\",\"data\":{\"card_name\":\"Funciones\",\"col\":4}}]",
  "creation": "2024-01-15 08:32:28.028270",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "support",
+ "icon": "link-url",
  "idx": 0,
- "indicator_color": "green",
+ "indicator_color": "",
  "is_hidden": 0,
- "label": "Administrativos",
+ "label": "Accidentes",
  "links": [
   {
    "hidden": 0,
@@ -42,7 +42,7 @@
    "is_query_report": 0,
    "label": "Ver Municipios",
    "link_count": 0,
-   "link_to": "MUNICIPIO",
+   "link_to": "Municipio",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -58,13 +58,13 @@
    "type": "Link"
   }
  ],
- "modified": "2024-01-24 15:36:28.695434",
+ "modified": "2024-02-21 14:16:03.096881",
  "modified_by": "Administrator",
  "module": "Dev app",
- "name": "Administrativos",
+ "name": "Accidentes",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "",
+ "parent_page": "Operativos",
  "public": 1,
  "quick_lists": [],
  "roles": [
@@ -72,7 +72,7 @@
    "role": "Operativo Administrativo"
   }
  ],
- "sequence_id": 2.0,
+ "sequence_id": 4.0,
  "shortcuts": [],
- "title": "Administrativos"
+ "title": "Accidentes"
 }

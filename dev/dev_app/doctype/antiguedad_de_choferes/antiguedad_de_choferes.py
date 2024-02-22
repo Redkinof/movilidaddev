@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class ANTIGUEDADDECHOFERES(Document):
+class Antiguedaddechoferes(Document):
 	pass

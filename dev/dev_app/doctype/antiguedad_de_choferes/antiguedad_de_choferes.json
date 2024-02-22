@@ -99,7 +99,7 @@
    "fieldname": "domicilio",
    "fieldtype": "Link",
    "label": "DOMICILIO",
-   "options": "DOMICILIO"
+   "options": "Domicilio"
   },
   {
    "fieldname": "no_de_licencia",
@@ -192,10 +192,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-20 10:03:39.380575",
+ "modified": "2024-02-21 15:05:15.806338",
  "modified_by": "Administrator",
  "module": "Dev app",
- "name": "ANTIGUEDAD DE CHOFERES",
+ "name": "Antiguedad de choferes",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [

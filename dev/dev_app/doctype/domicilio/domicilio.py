@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class DOMICILIO(Document):
+class Domicilio(Document):
 	pass

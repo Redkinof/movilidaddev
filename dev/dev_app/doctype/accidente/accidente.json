@@ -216,7 +216,7 @@
    "fieldname": "peaton_o_ciclista",
    "fieldtype": "Table",
    "label": "PEATON O CICLISTA",
-   "options": "PEATON O CICLISTA"
+   "options": "Peaton o ciclista"
   },
   {
    "fieldname": "costos_section",
@@ -362,7 +362,7 @@
    "fieldname": "vehiculos",
    "fieldtype": "Table",
    "label": "VEHICULOS",
-   "options": "VEHICULOS ACCIDENTE"
+   "options": "Vehiculos accidente"
   },
   {
    "default": "0",
@@ -419,10 +419,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-20 14:01:56.108488",
+ "modified": "2024-02-21 15:05:05.218442",
  "modified_by": "Administrator",
  "module": "Dev app",
- "name": "ACCIDENTE",
+ "name": "Accidente",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [

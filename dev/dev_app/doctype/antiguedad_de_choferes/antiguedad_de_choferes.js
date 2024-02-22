@@ -1,7 +1,7 @@
 // Copyright (c) 2024, Alejandro Hernandez and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on("ANTIGUEDAD DE CHOFERES", {
+frappe.ui.form.on("Antiguedad de choferes", {
    refresh(frm) {
      //    var nowDate = new Date(); 
      //    var date = nowDate.getFullYear()+'/'+(nowDate.getMonth()+1)+'/'+nowDate.getDate();
