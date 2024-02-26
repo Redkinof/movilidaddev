@@ -19,28 +19,27 @@
  "fields": [
   {
    "fieldname": "datos_domicilio_section",
-   "fieldtype": "Section Break",
-   "label": "DATOS DOMICILIO"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "comprobante_de_domicilio",
    "fieldtype": "Attach",
-   "label": "COMPROBANTE DE DOMICILIO"
+   "label": "Comprobante de Domicilio"
   },
   {
    "fieldname": "calle",
    "fieldtype": "Data",
-   "label": "CALLE"
+   "label": "Calle"
   },
   {
    "fieldname": "numero_exterior",
    "fieldtype": "Data",
-   "label": "NUMERO EXTERIOR"
+   "label": "N\u00b0 Exterior"
   },
   {
    "fieldname": "numero_interior",
    "fieldtype": "Data",
-   "label": "NUMERO INTERIOR"
+   "label": "N\u00b0 Interior"
   },
   {
    "fieldname": "column_break_focr",
@@ -49,29 +48,29 @@
   {
    "fieldname": "municipio",
    "fieldtype": "Link",
-   "label": "MUNICIPIO",
-   "options": "MUNICIPIO"
+   "label": "Municipio",
+   "options": "Municipio"
   },
   {
    "fieldname": "localidad",
    "fieldtype": "Link",
-   "label": "LOCALIDAD",
-   "options": "LOCALIDAD"
+   "label": "Localidad",
+   "options": "Localidad"
   },
   {
    "fieldname": "colonia",
    "fieldtype": "Data",
-   "label": "COLONIA"
+   "label": "Colonia"
   },
   {
    "fieldname": "codigo_postal",
    "fieldtype": "Data",
-   "label": "CODIGO POSTAL"
+   "label": "C\u00f3digo Postal"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-24 15:45:46.926788",
+ "modified": "2024-02-26 11:00:57.465226",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "Domicilio",
