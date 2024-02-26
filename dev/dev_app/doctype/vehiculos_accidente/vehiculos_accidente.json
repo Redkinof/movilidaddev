@@ -48,14 +48,13 @@
   {
    "fieldname": "tipo_de_vehiculo",
    "fieldtype": "Select",
-   "label": "TIPO DE VEHICULO",
+   "label": "Tipo de Veh\u00edculo",
    "options": "PICK UP\nSUV\nSEDAN\nMOTOCICLETA\nBICICLETA\nCAMION DE PASAJEROS\nTRACTOCAMION\nPIPA\nCAMIONETA DE CARGA\nCAMION DE CARGA TIPO TORTON\nCAMION DE CARGA TIPO VOLTEO\nBICICLETA\nSE DIO A LA FUGA\nOTROS",
    "reqd": 1
   },
   {
    "fieldname": "vehiculo_section",
-   "fieldtype": "Section Break",
-   "label": "VEH\u00cdCULO"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "column_break_wjrp",
@@ -69,7 +68,7 @@
   {
    "fieldname": "genero",
    "fieldtype": "Select",
-   "label": "G\u00c9NERO",
+   "label": "G\u00e9nero",
    "options": "MASCULINO\nFEMENINO\nS/D",
    "reqd": 1
   },
@@ -80,51 +79,51 @@
   {
    "fieldname": "nolicencia",
    "fieldtype": "Data",
-   "label": "No.LICENCIA",
+   "label": "N\u00b0 Licencia",
    "reqd": 1
   },
   {
    "fieldname": "tipo",
    "fieldtype": "Select",
-   "label": "TIPO",
+   "label": "Tipo",
    "options": "PERMISO PARA MENOR\nAUTOMOVILISTA\nCHOFER\nMOTOCICLISTA\nOPERADOR CERTIFICADO",
    "reqd": 1
   },
   {
    "fieldname": "edad",
    "fieldtype": "Int",
-   "label": "EDAD",
+   "label": "Edad",
    "reqd": 1
   },
   {
    "fieldname": "vigencia",
    "fieldtype": "Date",
-   "label": "VIGENCIA",
+   "label": "Vigencia",
    "reqd": 1
   },
   {
    "fieldname": "entidad",
    "fieldtype": "Data",
-   "label": "ENTIDAD",
+   "label": "Entidad",
    "reqd": 1
   },
   {
    "default": "0",
    "fieldname": "lesionado",
    "fieldtype": "Check",
-   "label": "LESIONADO"
+   "label": "Lesionado"
   },
   {
    "default": "0",
    "fieldname": "uso_de_grua",
    "fieldtype": "Check",
-   "label": "USO DE GRUA"
+   "label": "Uso de Grua"
   },
   {
    "fieldname": "vehiculo",
    "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "VEH\u00cdCULO",
+   "label": "Veh\u00edculo",
    "options": "TRANSPORTE PUBLICO\nCARGA\nESPECIALIZADO\nPARTICULAR",
    "reqd": 1
   },
@@ -132,13 +131,13 @@
    "fieldname": "propietario",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "PROPIETARIO",
+   "label": "Propietario",
    "reqd": 1
   },
   {
    "fieldname": "tipo_servicio",
    "fieldtype": "Select",
-   "label": "TIPO SERVICIO",
+   "label": "Tipo Servicio",
    "options": "PARTICULAR\nPUBLICO\nSD",
    "reqd": 1
   },
@@ -146,17 +145,17 @@
    "fieldname": "placa",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "PLACA"
+   "label": "Placa"
   },
   {
    "fieldname": "modelo",
    "fieldtype": "Data",
-   "label": "MODELO"
+   "label": "Modelo"
   },
   {
    "fieldname": "tipo_auto",
    "fieldtype": "Data",
-   "label": "TIPO AUTO"
+   "label": "Tipo Automovil"
   },
   {
    "fieldname": "column_break_ygzc",
@@ -165,13 +164,13 @@
   {
    "fieldname": "permiso",
    "fieldtype": "Data",
-   "label": "PERMISO",
+   "label": "Permiso",
    "reqd": 1
   },
   {
    "fieldname": "color",
    "fieldtype": "Select",
-   "label": "COLOR",
+   "label": "Color",
    "options": "Rojo\nNegro\nBlanco\nAzul\nGris\nPlata\nCaf\u00e9/Beige\nVerde\nAmarillo\nMorado\nNaranja\nOtro",
    "reqd": 1
   },
@@ -179,89 +178,89 @@
    "depends_on": "eval:doc.color == 'Otro'",
    "fieldname": "otro_color",
    "fieldtype": "Data",
-   "label": "OTRO COLOR"
+   "label": "Otro Color"
   },
   {
    "fieldname": "marca",
    "fieldtype": "Data",
-   "label": "MARCA"
+   "label": "Marca"
   },
   {
    "fieldname": "sub_marca",
    "fieldtype": "Data",
-   "label": "SUB MARCA"
+   "label": "Submarca"
   },
   {
    "fieldname": "nombre_conductor",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "NOMBRE CONDUCTOR",
+   "label": "Nombre de Conductor",
    "reqd": 1
   },
   {
    "depends_on": "eval:doc.tipo_de_vehiculo == 'OTROS'",
    "fieldname": "otros",
    "fieldtype": "Data",
-   "label": "OTROS"
+   "label": "Otros"
   },
   {
    "fieldname": "telefono",
    "fieldtype": "Data",
-   "label": "TEL\u00c9FONO",
+   "label": "Tel\u00e9fono",
    "reqd": 1
   },
   {
    "fieldname": "domicilio_vehiculo",
    "fieldtype": "Data",
-   "label": "DOMICILIO VEH\u00cdCULO",
+   "label": "Domicilio Veh\u00edculo",
    "reqd": 1
   },
   {
    "fieldname": "municipio",
    "fieldtype": "Link",
-   "label": "MUNICIPIO",
-   "options": "MUNICIPIO",
+   "label": "Municipio",
+   "options": "Municipio",
    "reqd": 1
   },
   {
    "fieldname": "domicilio_conductor",
    "fieldtype": "Data",
-   "label": "DOMICILIO CONDUCTOR",
+   "label": "Domicilio Conductor",
    "reqd": 1
   },
   {
    "fieldname": "noeconomico",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "No.ECON\u00d3MICO"
+   "label": "N\u00b0 Econ\u00f3mico"
   },
   {
    "fieldname": "serie_vehiculo",
    "fieldtype": "Data",
-   "label": "SERIE VEH\u00cdCULO"
+   "label": "Serie Veh\u00edculo"
   },
   {
    "default": "0",
    "fieldname": "fallecido",
    "fieldtype": "Check",
-   "label": "FALLECIDO"
+   "label": "Fallecido"
   },
   {
    "default": "0",
    "fieldname": "solo_dano",
    "fieldtype": "Check",
-   "label": "SOLO DA\u00d1O"
+   "label": "Solo Da\u00f1o"
   },
   {
    "default": "0",
    "fieldname": "aparente_estado_de_ebriedad",
    "fieldtype": "Check",
-   "label": "APARENTE ESTADO DE EBRIEDAD"
+   "label": "Aparente estado de Ebriedad"
   },
   {
    "fieldname": "seguro",
    "fieldtype": "Select",
-   "label": "SEGURO",
+   "label": "Seguro",
    "options": "SI\nNO",
    "reqd": 1
   }
@@ -269,7 +268,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-01-24 13:53:55.321660",
+ "modified": "2024-02-26 10:56:09.928381",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "Vehiculos accidente",
