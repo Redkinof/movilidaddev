@@ -176,7 +176,7 @@
   {
    "fieldname": "nopatrulla",
    "fieldtype": "Data",
-   "label": "No.Patrulla",
+   "label": "N\u00b0 Patrulla",
    "reqd": 1
   },
   {
@@ -195,7 +195,7 @@
   {
    "fieldname": "calle_y_no",
    "fieldtype": "Data",
-   "label": "Calle y No.",
+   "label": "Calle y N\u00b0",
    "reqd": 1
   },
   {
@@ -253,7 +253,7 @@
   {
    "fieldname": "no_de_unidad",
    "fieldtype": "Data",
-   "label": "No. de Unidad",
+   "label": "N\u00b0 de Unidad",
    "reqd": 1
   },
   {
@@ -418,7 +418,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-26 10:07:20.603001",
+ "modified": "2024-02-26 10:28:16.617586",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "Accidente",

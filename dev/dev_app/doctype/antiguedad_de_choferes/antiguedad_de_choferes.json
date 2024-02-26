@@ -39,39 +39,38 @@
  "fields": [
   {
    "fieldname": "antiguedad_section",
-   "fieldtype": "Section Break",
-   "label": "ANTIGUEDAD"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "fecha_de_registro",
    "fieldtype": "Date",
-   "label": "FECHA DE REGISTRO"
+   "label": "Fechas de Registro"
   },
   {
    "fieldname": "apellido_paterno",
    "fieldtype": "Data",
-   "label": "APELLIDO PATERNO"
+   "label": "Apellido Paterno"
   },
   {
    "fieldname": "apellido_materno",
    "fieldtype": "Data",
-   "label": "APELLIDO MATERNO"
+   "label": "Apellido Materno"
   },
   {
    "fieldname": "nombre",
    "fieldtype": "Data",
-   "label": "NOMBRE"
+   "label": "Nombre"
   },
   {
    "fieldname": "genero",
    "fieldtype": "Select",
-   "label": "G\u00c9NERO",
+   "label": "G\u00e9nero",
    "options": "HOMBRE\nMUJER\nSG"
   },
   {
    "fieldname": "telefono_celular",
    "fieldtype": "Data",
-   "label": "TEL\u00c9FONO CELULAR"
+   "label": "Tel\u00e9fono Celular"
   },
   {
    "fieldname": "column_break_oipq",
@@ -88,28 +87,28 @@
   {
    "fieldname": "clave_de_elector",
    "fieldtype": "Data",
-   "label": "CLAVE DE ELECTOR"
+   "label": "Clave de Elector"
   },
   {
    "fieldname": "no_seguro_social",
    "fieldtype": "Data",
-   "label": "N\u00b0 SEGURO SOCIAL"
+   "label": "N\u00b0 Seguro Social"
   },
   {
    "fieldname": "domicilio",
    "fieldtype": "Link",
-   "label": "DOMICILIO",
+   "label": "Domicilio",
    "options": "Domicilio"
   },
   {
    "fieldname": "no_de_licencia",
    "fieldtype": "Data",
-   "label": "N\u00b0 DE LICENCIA"
+   "label": "N\u00b0 de Licencia"
   },
   {
    "fieldname": "tipo_de_licencia",
    "fieldtype": "Select",
-   "label": "TIPO DE LICENCIA",
+   "label": "Tipo de Licencia",
    "options": "AUTOMOVILISTA\nCHOFER\nMOTOCICLISTA\nPERMISO PARA MENOR"
   },
   {
@@ -120,17 +119,17 @@
   {
    "fieldname": "oficio_de_sindicato",
    "fieldtype": "Attach",
-   "label": "OFICIO DE SINDICATO"
+   "label": "Oficio de Sindicato"
   },
   {
    "fieldname": "constancia_imss",
    "fieldtype": "Attach",
-   "label": "CONSTANCIA IMSS"
+   "label": "Constancia IMSS"
   },
   {
    "fieldname": "recibos_de_pago_de_organizacion",
    "fieldtype": "Attach",
-   "label": "RECIBOS DE PAGO DE ORGANIZACION"
+   "label": "Recibos de pago de organizaci\u00f3n"
   },
   {
    "fieldname": "column_break_xnnv",
@@ -139,24 +138,23 @@
   {
    "fieldname": "constancia_expedida_por_concesionario",
    "fieldtype": "Attach",
-   "label": "CONSTANCIA EXPEDIDA POR CONCESIONARIO"
+   "label": "Constancia expedida por Concesionario"
   },
   {
    "fieldname": "antiguedad",
    "fieldtype": "Attach",
-   "label": "ANTIGUEDAD"
+   "label": "Antiguedad"
   },
   {
    "fieldname": "fecha_inicio_de_registro",
    "fieldtype": "Date",
    "in_standard_filter": 1,
-   "label": "FECHA INICIO DE REGISTRO",
+   "label": "Fecha Inicio de Registro",
    "reqd": 1
   },
   {
    "fieldname": "carga_documentos_section",
-   "fieldtype": "Section Break",
-   "label": "CARGA DOCUMENTOS"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "ine",
@@ -166,7 +164,7 @@
   {
    "fieldname": "licencia_de_conducir",
    "fieldtype": "Attach",
-   "label": "LICENCIA DE CONDUCIR"
+   "label": "Licencia de Conducir"
   },
   {
    "fieldname": "column_break_qsvi",
@@ -175,24 +173,24 @@
   {
    "fieldname": "comprobante_de_antiguedad",
    "fieldtype": "Attach",
-   "label": "COMPROBANTE DE ANTIGUEDAD"
+   "label": "Comprobante de Antiguedad"
   },
   {
    "fieldname": "comprobante_de_domicilio",
    "fieldtype": "Attach",
-   "label": "COMPROBANTE DE DOMICILIO"
+   "label": "Comprobante de Domicilio"
   },
   {
    "depends_on": "fecha_inicio_de_registro",
    "fieldname": "dias_de_antiguedad",
    "fieldtype": "Data",
-   "label": "DIAS DE ANTIGUEDAD",
+   "label": "D\u00edas de Antiguedad",
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-23 14:51:27.900719",
+ "modified": "2024-02-26 10:26:49.628756",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "Antiguedad de choferes",
