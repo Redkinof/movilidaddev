@@ -44,6 +44,7 @@
   "datos_accidente_section",
   "tipo_de_accidente",
   "otro_accidente",
+  "column_break_uenj",
   "causa",
   "otra_causa",
   "clase",
@@ -77,30 +78,21 @@
   {
    "fieldname": "informacion_section",
    "fieldtype": "Section Break",
-   "label": "REPORTE ACCIDENTE"
+   "label": "Reporte Accidente"
   },
   {
    "fieldname": "fecha_y_hora",
    "fieldtype": "Datetime",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "FECHA Y HORA",
-   "reqd": 1
-  },
-  {
-   "depends_on": "municipio",
-   "fetch_from": ".",
-   "fieldname": "localidad",
-   "fieldtype": "Link",
-   "label": "LOCALIDAD",
-   "options": "LOCALIDAD",
+   "label": "Fecha y Hora",
    "reqd": 1
   },
   {
    "fieldname": "municipio",
    "fieldtype": "Link",
    "in_standard_filter": 1,
-   "label": "MUNICIPIO",
+   "label": "Municipio",
    "options": "Municipio",
    "reqd": 1
   },
@@ -111,71 +103,70 @@
   {
    "fieldname": "colonia",
    "fieldtype": "Data",
-   "label": "COLONIA",
+   "label": "Colonia",
    "reqd": 1
   },
   {
    "fieldname": "entre_calle",
    "fieldtype": "Data",
-   "label": "ENTRE CALLE",
+   "label": "Entre calle",
    "reqd": 1
   },
   {
    "fieldname": "mapa_accidente_section",
    "fieldtype": "Section Break",
-   "label": "MAPA ACCIDENTE"
+   "label": "Mapa Accidente"
   },
   {
    "fieldname": "latitud_y_longitud",
    "fieldtype": "Geolocation",
-   "label": "LATITUD Y LONGITUD"
+   "label": "Latitud y Longitud"
   },
   {
    "fieldname": "datos_accidente_section",
    "fieldtype": "Section Break",
-   "label": "DATOS ACCIDENTE"
+   "label": "Datos accidente"
   },
   {
    "fieldname": "causa",
    "fieldtype": "Select",
-   "label": "CAUSA",
+   "label": "Causa",
    "options": "CONDUCTOR\nPEATON O PASAJERO\nFALLA DE VEHICULO\nMALA CONDICION DE CAMINO\nCONDUCIR EBRIO\nOTRAS CAUSAS",
    "reqd": 1
   },
   {
    "fieldname": "tipo_de_accidente",
    "fieldtype": "Select",
-   "label": "TIPO DE ACCIDENTE",
+   "label": "Tipo de Accidente",
    "options": "COLISION CON VEHICULO\nCOLISION CON PEATON\nCOLISION CON ANIMAL\nCOLISION CON OBJETO FIJO\nVOLCADURA\nCAIDA DE PASAJERO\nSALIDA DE CAMINO\nINCENDIO\nCOLISION CON FERROCARRIL\nCOLISION CON MOTOCICLISTA\nCOLISION CON CICLISTA\nDERRAPE\nASEGURADO POR ESTAR EBRIO\nOTROS ACCIDENTES",
    "reqd": 1
   },
   {
    "fieldname": "clase",
    "fieldtype": "Select",
-   "label": "CLASE",
+   "label": "Clase",
    "options": "FATAL\nNO FATAL (HERIDOS)\nSOLO DA\u00d1OS\nASEGURACION DE VEHICULO",
    "reqd": 1
   },
   {
    "fieldname": "valoracion_de_danos",
    "fieldtype": "Data",
-   "label": "VALORACION DE DA\u00d1OS",
+   "label": "Valoraci\u00f3n de da\u00f1os",
    "reqd": 1
   },
   {
    "fieldname": "vehiculos_section",
-   "fieldtype": "Section Break",
-   "label": "VEHICULOS"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "datos_del_agente_section",
    "fieldtype": "Section Break",
-   "label": "DATOS DEL AGENTE"
+   "label": "Datos del Agente"
   },
   {
    "fieldname": "nombre",
    "fieldtype": "Data",
-   "label": "NOMBRE",
+   "label": "Nombre",
    "reqd": 1
   },
   {
@@ -185,54 +176,53 @@
   {
    "fieldname": "nopatrulla",
    "fieldtype": "Data",
-   "label": "No.PATRULLA",
+   "label": "No.Patrulla",
    "reqd": 1
   },
   {
    "fieldname": "participantes_section",
    "fieldtype": "Section Break",
-   "label": "PARTICIPANTES"
+   "label": "Participantes"
   },
   {
    "fieldname": "libramiento_de_tepic",
    "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "LIBRAMIENTO DE TEPIC",
+   "label": "Libramiento de Tepic",
    "options": "PONIENTE\nORIENTE",
    "reqd": 1
   },
   {
    "fieldname": "calle_y_no",
    "fieldtype": "Data",
-   "label": "CALLE Y No.",
+   "label": "Calle y No.",
    "reqd": 1
   },
   {
    "fieldname": "peatones_o_ciclistas_section",
-   "fieldtype": "Section Break",
-   "label": "PEATONES O CICLISTAS"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "peaton_o_ciclista",
    "fieldtype": "Table",
-   "label": "PEATON O CICLISTA",
+   "label": "Peat\u00f3n o Ciclista",
    "options": "Peaton o ciclista"
   },
   {
    "fieldname": "costos_section",
    "fieldtype": "Section Break",
-   "label": "COSTOS"
+   "label": "Costos"
   },
   {
    "fieldname": "total_de_vehiculos_participantes",
    "fieldtype": "Data",
-   "label": "TOTAL DE VEHICULOS PARTICIPANTES",
+   "label": "Total de Veh\u00edculos Participantes",
    "read_only": 1
   },
   {
    "fieldname": "lesionados",
    "fieldtype": "Data",
-   "label": "LESIONADOS",
+   "label": "Lesionados",
    "read_only": 1
   },
   {
@@ -242,18 +232,18 @@
   {
    "fieldname": "fallecidos",
    "fieldtype": "Data",
-   "label": "FALLECIDOS",
+   "label": "Fallecidos",
    "read_only": 1
   },
   {
    "fieldname": "datos_del_primer_responsable_section",
    "fieldtype": "Section Break",
-   "label": "DATOS DEL PRIMER RESPONDIENTE"
+   "label": "Datos del Primer Responsable"
   },
   {
    "fieldname": "nombre_responsable",
    "fieldtype": "Data",
-   "label": "NOMBRE RESPONSABLE",
+   "label": "Nombre Responsable",
    "reqd": 1
   },
   {
@@ -263,24 +253,23 @@
   {
    "fieldname": "no_de_unidad",
    "fieldtype": "Data",
-   "label": "No. DE UNIDAD",
+   "label": "No. de Unidad",
    "reqd": 1
   },
   {
    "fieldname": "narrativa_de_los_hechos",
    "fieldtype": "Text Editor",
-   "label": "NARRATIVA DE LOS HECHOS",
+   "label": "Narrativa de los hechos",
    "reqd": 1
   },
   {
    "fieldname": "firmas_section",
-   "fieldtype": "Section Break",
-   "label": "FIRMAS"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "agente_de_movilidad",
    "fieldtype": "Signature",
-   "label": "AGENTE DE MOVILIDAD",
+   "label": "Agente de Movilidad",
    "reqd": 1
   },
   {
@@ -290,96 +279,96 @@
   {
    "fieldname": "comandante_en_turno",
    "fieldtype": "Signature",
-   "label": "COMANDANTE EN TURNO"
+   "label": "Comandante en Turno"
   },
   {
    "fieldname": "hospitalizados",
    "fieldtype": "Data",
-   "label": "HOSPITALIZADOS",
+   "label": "Hospitalizados",
    "read_only": 1
   },
   {
    "default": "0",
    "fieldname": "peaton",
    "fieldtype": "Check",
-   "label": "PEAT\u00d3N"
+   "label": "Peat\u00f3n"
   },
   {
    "default": "0",
    "fieldname": "bicicleta",
    "fieldtype": "Check",
-   "label": "BICICLETA"
+   "label": "Bicicleta"
   },
   {
    "default": "0",
    "fieldname": "autobus",
    "fieldtype": "Check",
-   "label": "AUTOB\u00daS"
+   "label": "Autob\u00fas"
   },
   {
    "default": "0",
    "fieldname": "combi",
    "fieldtype": "Check",
-   "label": "COMBI"
+   "label": "Combi"
   },
   {
    "default": "0",
    "fieldname": "taxi",
    "fieldtype": "Check",
-   "label": "TAXI"
+   "label": "Taxi"
   },
   {
    "default": "0",
    "fieldname": "camion_de_carga",
    "fieldtype": "Check",
-   "label": "CAMI\u00d3N DE CARGA"
+   "label": "Cami\u00f3n de Carga"
   },
   {
    "default": "0",
    "fieldname": "automovil_particular",
    "fieldtype": "Check",
-   "label": "AUTOMOVIL PARTICULAR"
+   "label": "Autom\u00f3vil Particular"
   },
   {
    "default": "0",
    "fieldname": "motocicleta",
    "fieldtype": "Check",
-   "label": "MOTOCICLETA"
+   "label": "Motocicleta"
   },
   {
    "depends_on": "eval:doc.tipo_de_accidente == 'OTROS ACCIDENTES'",
    "fieldname": "otro_accidente",
    "fieldtype": "Data",
-   "label": "OTRO ACCIDENTE"
+   "label": "Otro Accidente"
   },
   {
    "depends_on": "eval:doc.causa == 'OTRAS CAUSAS'",
    "fieldname": "otra_causa",
    "fieldtype": "Data",
-   "label": "OTRA CAUSA"
+   "label": "Otra Causa"
   },
   {
    "fieldname": "vehiculos",
    "fieldtype": "Table",
-   "label": "VEHICULOS",
+   "label": "Vehiculos",
    "options": "Vehiculos accidente"
   },
   {
    "default": "0",
    "fieldname": "solo_danos",
    "fieldtype": "Check",
-   "label": "SOLO DA\u00d1OS"
+   "label": "Solo Da\u00f1os"
   },
   {
    "fieldname": "area",
    "fieldtype": "Data",
-   "label": "\u00c1REA",
+   "label": "\u00c1rea",
    "reqd": 1
   },
   {
    "fieldname": "delegacion",
    "fieldtype": "Data",
-   "label": "DELEGACI\u00d3N",
+   "label": "Delegaci\u00f3n",
    "reqd": 1
   },
   {
@@ -401,25 +390,35 @@
   {
    "fieldname": "identificacion_respondiente",
    "fieldtype": "Data",
-   "label": "IDENTIFICACI\u00d3N RESPONDIENTE",
+   "label": "Identificaci\u00f3n Respondiente",
    "reqd": 1
   },
   {
    "fieldname": "identificacion_agente",
    "fieldtype": "Data",
    "in_standard_filter": 1,
-   "label": "IDENTIFICACI\u00d3N AGENTE",
+   "label": "Identificaci\u00f3n Agente",
    "reqd": 1
   },
   {
    "fieldname": "narrativa_section",
-   "fieldtype": "Section Break",
-   "label": "NARRATIVA"
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_uenj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "Municipio",
+   "fieldname": "localidad",
+   "fieldtype": "Link",
+   "label": "Localidad",
+   "options": "Localidad"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-22 12:55:50.528298",
+ "modified": "2024-02-26 10:07:20.603001",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "Accidente",

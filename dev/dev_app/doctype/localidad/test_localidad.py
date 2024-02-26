@@ -1,9 +1,9 @@
-# Copyright (c) 2023, Alejandro Hernandez and Contributors
+# Copyright (c) 2024, Alejandro Hernandez and Contributors
 # See license.txt
 
 # import frappe
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestLOCALIDAD(FrappeTestCase):
+class TestLocalidad(FrappeTestCase):
 	pass
