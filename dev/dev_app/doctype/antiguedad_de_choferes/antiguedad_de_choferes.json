@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "AC-####",
+ "autoname": "AC-.####",
  "creation": "2024-01-25 10:09:04.281079",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -192,7 +192,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-21 15:05:15.806338",
+ "modified": "2024-02-23 14:51:27.900719",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "Antiguedad de choferes",
