@@ -1,0 +1,306 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-04 15:10:11.810858",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "equipo_de_computo_tab",
+  "informaci\u00f3n_general_column",
+  "num_equipo",
+  "num_serie",
+  "inv_usuario",
+  "inv_ubicacion",
+  "column_break_ubdr",
+  "section_break_cagw",
+  "equipo_de_computo_column",
+  "pc_marca",
+  "pc_modelo",
+  "tipo",
+  "procesador_column",
+  "proce_marca",
+  "proce_modelo",
+  "proce_velocidad",
+  "section_break_dwyu",
+  "memoria_ram_column",
+  "ram_marca",
+  "ram_modelo",
+  "ram_tipo",
+  "ram_velocidad",
+  "disco_de_almacenamiento_column",
+  "disco_marca",
+  "disco_modelo",
+  "disco_tamano",
+  "disco_tipo",
+  "perif\u00e9ricos_section",
+  "monitor_column",
+  "monitor_marca",
+  "monitor_modelo",
+  "monitor_tamano",
+  "monitor_tipo",
+  "teclado_column",
+  "teclado_marca",
+  "teclado_modelo",
+  "teclado_tipo",
+  "mouse_column",
+  "mouse_marca",
+  "mouse_modelo",
+  "mouse_tipo"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipo_de_computo_tab",
+   "fieldtype": "Tab Break",
+   "label": "Equipo de Computo"
+  },
+  {
+   "fieldname": "informaci\u00f3n_general_column",
+   "fieldtype": "Column Break",
+   "label": "Informaci\u00f3n General"
+  },
+  {
+   "fieldname": "num_equipo",
+   "fieldtype": "Data",
+   "label": "Numero de Equipo"
+  },
+  {
+   "fieldname": "num_serie",
+   "fieldtype": "Data",
+   "label": "Numero de Serie"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "inv_ubicacion",
+   "fieldtype": "Link",
+   "label": "Ubicacion",
+   "options": "Inv_Ubicacion"
+  },
+  {
+   "fieldname": "section_break_cagw",
+   "fieldtype": "Section Break",
+   "label": "Equipo"
+  },
+  {
+   "fieldname": "equipo_de_computo_column",
+   "fieldtype": "Column Break",
+   "label": "Caracter\u00edsticas"
+  },
+  {
+   "fieldname": "pc_marca",
+   "fieldtype": "Link",
+   "label": "Marca",
+   "options": "Inv_Marca_Equipo"
+  },
+  {
+   "fieldname": "pc_modelo",
+   "fieldtype": "Link",
+   "label": "Modelo",
+   "options": "Inv_Modelo_Equipo"
+  },
+  {
+   "fieldname": "procesador_column",
+   "fieldtype": "Column Break",
+   "label": "Procesador"
+  },
+  {
+   "fieldname": "proce_marca",
+   "fieldtype": "Select",
+   "label": "Marca",
+   "options": "\nIntel\nAMD"
+  },
+  {
+   "fieldname": "proce_modelo",
+   "fieldtype": "Link",
+   "label": "Modelo",
+   "options": "Inv_Modelo_Procesador"
+  },
+  {
+   "fieldname": "proce_velocidad",
+   "fieldtype": "Link",
+   "label": "Velocidad(Ghz)",
+   "options": "Inv_Velocidad_Procesador"
+  },
+  {
+   "fieldname": "section_break_dwyu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "memoria_ram_column",
+   "fieldtype": "Column Break",
+   "label": "Memoria RAM"
+  },
+  {
+   "fieldname": "ram_marca",
+   "fieldtype": "Link",
+   "label": "Marca",
+   "options": "Inv_Marca_RAM"
+  },
+  {
+   "fieldname": "ram_modelo",
+   "fieldtype": "Link",
+   "label": "Capacidad",
+   "options": "Inv_Capacidad_RAM"
+  },
+  {
+   "fieldname": "ram_tipo",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "\nDDR3\nDDR4"
+  },
+  {
+   "fieldname": "ram_velocidad",
+   "fieldtype": "Link",
+   "label": "Velocidad(MHz)",
+   "options": "Inv_Velocidad_RAM"
+  },
+  {
+   "fieldname": "disco_de_almacenamiento_column",
+   "fieldtype": "Column Break",
+   "label": "Disco de Almacenamiento "
+  },
+  {
+   "fieldname": "disco_marca",
+   "fieldtype": "Link",
+   "label": "Marca",
+   "options": "Inv_marca_Almacenamiento"
+  },
+  {
+   "fieldname": "disco_modelo",
+   "fieldtype": "Link",
+   "label": "Modelo",
+   "options": "Inv_Modelo_Almacenamiento"
+  },
+  {
+   "fieldname": "disco_tamano",
+   "fieldtype": "Link",
+   "label": "Tama\u00f1o",
+   "options": "Inv_Tamano_Almacenamiento"
+  },
+  {
+   "fieldname": "disco_tipo",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "Mec\u00e1nico\nSSD"
+  },
+  {
+   "fieldname": "perif\u00e9ricos_section",
+   "fieldtype": "Section Break",
+   "label": "Perif\u00e9ricos "
+  },
+  {
+   "fieldname": "monitor_column",
+   "fieldtype": "Column Break",
+   "label": "Monitor"
+  },
+  {
+   "fieldname": "monitor_marca",
+   "fieldtype": "Link",
+   "label": "Marca",
+   "options": "Inv_Marca_Monitor"
+  },
+  {
+   "fieldname": "monitor_modelo",
+   "fieldtype": "Link",
+   "label": "Modelo ",
+   "options": "Inv_Modelo_Monitor"
+  },
+  {
+   "fieldname": "monitor_tamano",
+   "fieldtype": "Link",
+   "label": "Tama\u00f1o (Pulgadas)",
+   "options": "Inv_Tamano_Monitor"
+  },
+  {
+   "fieldname": "monitor_tipo",
+   "fieldtype": "Link",
+   "label": "Tipo",
+   "options": "Inv_Tipo_Monitor"
+  },
+  {
+   "fieldname": "teclado_column",
+   "fieldtype": "Column Break",
+   "label": "Teclado"
+  },
+  {
+   "fieldname": "teclado_marca",
+   "fieldtype": "Link",
+   "label": "Marca",
+   "options": "Inv_Marca_Teclado"
+  },
+  {
+   "fieldname": "teclado_modelo",
+   "fieldtype": "Link",
+   "label": "Modelo",
+   "options": "Inv_Modelo_Teclado"
+  },
+  {
+   "fieldname": "teclado_tipo",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "Al\u00e1mbrico\nInal\u00e1mbrico"
+  },
+  {
+   "fieldname": "mouse_column",
+   "fieldtype": "Column Break",
+   "label": "Mouse"
+  },
+  {
+   "fieldname": "mouse_marca",
+   "fieldtype": "Link",
+   "label": "Marca",
+   "options": "Inv_Marca_Mouse"
+  },
+  {
+   "fieldname": "mouse_modelo",
+   "fieldtype": "Link",
+   "label": "Modelo",
+   "options": "Inv_Modelo_Mouse"
+  },
+  {
+   "fieldname": "mouse_tipo",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "Al\u00e1mbrico\nInal\u00e1mbrico"
+  },
+  {
+   "fieldname": "tipo",
+   "fieldtype": "Link",
+   "label": "Tipo",
+   "options": "Inv_Tipo_Equipo"
+  },
+  {
+   "fieldname": "column_break_ubdr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inv_usuario",
+   "fieldtype": "Link",
+   "label": "Usuario",
+   "options": "Inv_Usuario"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-06 15:04:58.363175",
+ "modified_by": "Administrator",
+ "module": "Dev app",
+ "name": "Inventario",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
