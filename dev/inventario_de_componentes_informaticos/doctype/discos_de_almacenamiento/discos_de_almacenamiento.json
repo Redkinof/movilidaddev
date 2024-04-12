@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-15 09:50:57.557467",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "discos_de_almacenamiento_section",
+  "disco_marca",
+  "disco_modelo",
+  "disco_tamano",
+  "tipo"
+ ],
+ "fields": [
+  {
+   "fieldname": "discos_de_almacenamiento_section",
+   "fieldtype": "Section Break",
+   "label": "Discos de Almacenamiento"
+  },
+  {
+   "fieldname": "disco_marca",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Marca",
+   "options": "Inv_marca_Almacenamiento"
+  },
+  {
+   "fieldname": "disco_modelo",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Modelo",
+   "options": "Inv_Modelo_Almacenamiento"
+  },
+  {
+   "fieldname": "disco_tamano",
+   "fieldtype": "Link",
+   "label": "Tama\u00f1o",
+   "options": "Inv_Tamano_Almacenamiento"
+  },
+  {
+   "fieldname": "tipo",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "\nMec\u00e1nico\nSSD\nEVM SSD M.2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-04 11:04:14.197642",
+ "modified_by": "Administrator",
+ "module": "Inventario de componentes informaticos",
+ "name": "Discos de almacenamiento",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

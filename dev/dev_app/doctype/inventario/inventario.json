@@ -21,31 +21,12 @@
   "proce_marca",
   "proce_modelo",
   "proce_velocidad",
-  "section_break_dwyu",
-  "memoria_ram_column",
-  "ram_marca",
-  "ram_modelo",
-  "ram_tipo",
-  "ram_velocidad",
-  "disco_de_almacenamiento_column",
-  "disco_marca",
-  "disco_modelo",
-  "disco_tamano",
-  "disco_tipo",
-  "perif\u00e9ricos_section",
-  "monitor_column",
-  "monitor_marca",
-  "monitor_modelo",
-  "monitor_tamano",
-  "monitor_tipo",
-  "teclado_column",
-  "teclado_marca",
-  "teclado_modelo",
-  "teclado_tipo",
-  "mouse_column",
-  "mouse_marca",
-  "mouse_modelo",
-  "mouse_tipo"
+  "memorias_ram_section",
+  "table_ram",
+  "discos_de_almacenamiento_section",
+  "table_discos",
+  "section_break_wbfc",
+  "table_wufa"
  ],
  "fields": [
   {
@@ -61,7 +42,7 @@
   {
    "fieldname": "num_equipo",
    "fieldtype": "Data",
-   "label": "Numero de Equipo"
+   "label": "Numero de Inventario Equipo"
   },
   {
    "fieldname": "num_serie",
@@ -121,148 +102,6 @@
    "options": "Inv_Velocidad_Procesador"
   },
   {
-   "fieldname": "section_break_dwyu",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "memoria_ram_column",
-   "fieldtype": "Column Break",
-   "label": "Memoria RAM"
-  },
-  {
-   "fieldname": "ram_marca",
-   "fieldtype": "Link",
-   "label": "Marca",
-   "options": "Inv_Marca_RAM"
-  },
-  {
-   "fieldname": "ram_modelo",
-   "fieldtype": "Link",
-   "label": "Capacidad",
-   "options": "Inv_Capacidad_RAM"
-  },
-  {
-   "fieldname": "ram_tipo",
-   "fieldtype": "Select",
-   "label": "Tipo",
-   "options": "\nDDR3\nDDR4"
-  },
-  {
-   "fieldname": "ram_velocidad",
-   "fieldtype": "Link",
-   "label": "Velocidad(MHz)",
-   "options": "Inv_Velocidad_RAM"
-  },
-  {
-   "fieldname": "disco_de_almacenamiento_column",
-   "fieldtype": "Column Break",
-   "label": "Disco de Almacenamiento "
-  },
-  {
-   "fieldname": "disco_marca",
-   "fieldtype": "Link",
-   "label": "Marca",
-   "options": "Inv_marca_Almacenamiento"
-  },
-  {
-   "fieldname": "disco_modelo",
-   "fieldtype": "Link",
-   "label": "Modelo",
-   "options": "Inv_Modelo_Almacenamiento"
-  },
-  {
-   "fieldname": "disco_tamano",
-   "fieldtype": "Link",
-   "label": "Tama\u00f1o",
-   "options": "Inv_Tamano_Almacenamiento"
-  },
-  {
-   "fieldname": "disco_tipo",
-   "fieldtype": "Select",
-   "label": "Tipo",
-   "options": "Mec\u00e1nico\nSSD"
-  },
-  {
-   "fieldname": "perif\u00e9ricos_section",
-   "fieldtype": "Section Break",
-   "label": "Perif\u00e9ricos "
-  },
-  {
-   "fieldname": "monitor_column",
-   "fieldtype": "Column Break",
-   "label": "Monitor"
-  },
-  {
-   "fieldname": "monitor_marca",
-   "fieldtype": "Link",
-   "label": "Marca",
-   "options": "Inv_Marca_Monitor"
-  },
-  {
-   "fieldname": "monitor_modelo",
-   "fieldtype": "Link",
-   "label": "Modelo ",
-   "options": "Inv_Modelo_Monitor"
-  },
-  {
-   "fieldname": "monitor_tamano",
-   "fieldtype": "Link",
-   "label": "Tama\u00f1o (Pulgadas)",
-   "options": "Inv_Tamano_Monitor"
-  },
-  {
-   "fieldname": "monitor_tipo",
-   "fieldtype": "Link",
-   "label": "Tipo",
-   "options": "Inv_Tipo_Monitor"
-  },
-  {
-   "fieldname": "teclado_column",
-   "fieldtype": "Column Break",
-   "label": "Teclado"
-  },
-  {
-   "fieldname": "teclado_marca",
-   "fieldtype": "Link",
-   "label": "Marca",
-   "options": "Inv_Marca_Teclado"
-  },
-  {
-   "fieldname": "teclado_modelo",
-   "fieldtype": "Link",
-   "label": "Modelo",
-   "options": "Inv_Modelo_Teclado"
-  },
-  {
-   "fieldname": "teclado_tipo",
-   "fieldtype": "Select",
-   "label": "Tipo",
-   "options": "Al\u00e1mbrico\nInal\u00e1mbrico"
-  },
-  {
-   "fieldname": "mouse_column",
-   "fieldtype": "Column Break",
-   "label": "Mouse"
-  },
-  {
-   "fieldname": "mouse_marca",
-   "fieldtype": "Link",
-   "label": "Marca",
-   "options": "Inv_Marca_Mouse"
-  },
-  {
-   "fieldname": "mouse_modelo",
-   "fieldtype": "Link",
-   "label": "Modelo",
-   "options": "Inv_Modelo_Mouse"
-  },
-  {
-   "fieldname": "mouse_tipo",
-   "fieldtype": "Select",
-   "label": "Tipo",
-   "options": "Al\u00e1mbrico\nInal\u00e1mbrico"
-  },
-  {
    "fieldname": "tipo",
    "fieldtype": "Link",
    "label": "Tipo",
@@ -277,11 +116,41 @@
    "fieldtype": "Link",
    "label": "Usuario",
    "options": "Inv_Usuario"
+  },
+  {
+   "fieldname": "discos_de_almacenamiento_section",
+   "fieldtype": "Section Break",
+   "label": "Discos de Almacenamiento"
+  },
+  {
+   "fieldname": "section_break_wbfc",
+   "fieldtype": "Section Break",
+   "label": "Perif\u00e9ricos "
+  },
+  {
+   "fieldname": "table_wufa",
+   "fieldtype": "Table",
+   "options": "Perifericos"
+  },
+  {
+   "fieldname": "table_discos",
+   "fieldtype": "Table",
+   "options": "Discos de almacenamiento"
+  },
+  {
+   "fieldname": "memorias_ram_section",
+   "fieldtype": "Section Break",
+   "label": "Memorias RAM"
+  },
+  {
+   "fieldname": "table_ram",
+   "fieldtype": "Table",
+   "options": "Memorias RAM"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-06 15:04:58.363175",
+ "modified": "2024-03-15 10:06:34.372310",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "Inventario",

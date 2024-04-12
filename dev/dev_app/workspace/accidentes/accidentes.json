@@ -58,7 +58,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-02-21 14:16:03.096881",
+ "modified": "2024-03-12 12:07:19.967891",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "Accidentes",
@@ -72,7 +72,7 @@
    "role": "Operativo Administrativo"
   }
  ],
- "sequence_id": 4.0,
+ "sequence_id": 5.0,
  "shortcuts": [],
  "title": "Accidentes"
 }

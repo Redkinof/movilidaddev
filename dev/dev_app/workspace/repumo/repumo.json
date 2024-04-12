@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"Ibh1y95q4E\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">REPUMO</span>\",\"col\":12}},{\"id\":\"3EiVW_nzlY\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "content": "[{\"id\":\"Ibh1y95q4E\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">REPUMO</span>\",\"col\":12}},{\"id\":\"3EiVW_nzlY\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"ga2h_CCu2n\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Antiguedad De Choferes\",\"col\":3}}]",
  "creation": "2024-01-24 15:36:24.388477",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "REPUMO",
  "links": [],
- "modified": "2024-02-21 14:16:47.024077",
+ "modified": "2024-03-20 12:16:21.916014",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "REPUMO",
@@ -23,7 +23,16 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 1.0,
- "shortcuts": [],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Antiguedad De Choferes",
+   "link_to": "Antiguedad de choferes",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
  "title": "REPUMO"
 }

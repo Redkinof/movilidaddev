@@ -1,0 +1,44 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"fWqCmxCAy0\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Inventario Informatico</span>\",\"col\":12}},{\"id\":\"IBRr8DjS9j\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"IK6t6g9G_p\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Inventario de inform\u00e1tica\",\"col\":3}},{\"id\":\"g0cK9NJ1Fs\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Lista del Inventario\",\"col\":4}}]",
+ "creation": "2024-03-12 12:07:14.206023",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "stock",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Inventario Informatico",
+ "links": [],
+ "modified": "2024-03-20 10:33:36.537246",
+ "modified_by": "Administrator",
+ "module": "Inventario de componentes informaticos",
+ "name": "Inventario Informatico",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Inventario",
+   "label": "Lista del Inventario",
+   "quick_list_filter": "[]"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Inventario de inform\u00e1tica",
+   "link_to": "Inventario",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Inventario Informatico"
+}
