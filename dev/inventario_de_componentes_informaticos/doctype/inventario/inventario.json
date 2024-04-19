@@ -6,13 +6,19 @@
  "engine": "InnoDB",
  "field_order": [
   "equipo_de_computo_tab",
+  "informaci\u00f3n_general_section",
   "informaci\u00f3n_general_column",
   "num_equipo",
   "num_serie",
   "inv_usuario",
   "inv_puesto",
-  "inv_ubicacion",
+  "inv_categoria",
   "column_break_ubdr",
+  "windows_ver",
+  "inv_ubicacion",
+  "inv_direccion",
+  "inv_departametno",
+  "inv_ip",
   "section_break_cagw",
   "equipo_de_computo_column",
   "pc_marca",
@@ -27,7 +33,9 @@
   "discos_de_almacenamiento_section",
   "table_discos",
   "section_break_wbfc",
-  "table_wufa"
+  "table_wufa",
+  "section_break_hpqk",
+  "tabla_perifericos"
  ],
  "fields": [
   {
@@ -37,8 +45,7 @@
   },
   {
    "fieldname": "informaci\u00f3n_general_column",
-   "fieldtype": "Column Break",
-   "label": "Informaci\u00f3n General"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "num_equipo",
@@ -53,6 +60,8 @@
   {
    "fieldname": "inv_usuario",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Usuario",
    "options": "Inv_Usuario"
   },
@@ -87,7 +96,7 @@
    "fieldname": "pc_modelo",
    "fieldtype": "Link",
    "label": "Modelo",
-   "options": "Inv_Modelo_Equipo"
+   "options": "modelo_de_pc"
   },
   {
    "fieldname": "tipo",
@@ -141,7 +150,7 @@
   {
    "fieldname": "section_break_wbfc",
    "fieldtype": "Section Break",
-   "label": "Perif\u00e9ricos "
+   "label": "Perif\u00e9ricos"
   },
   {
    "fieldname": "table_wufa",
@@ -153,11 +162,55 @@
    "fieldtype": "Link",
    "label": "Puesto",
    "options": "Inv_Puesto"
+  },
+  {
+   "fieldname": "section_break_hpqk",
+   "fieldtype": "Section Break",
+   "label": "(Ignorar) Perifericos"
+  },
+  {
+   "fieldname": "tabla_perifericos",
+   "fieldtype": "Table",
+   "options": "Perifericos Pc"
+  },
+  {
+   "fieldname": "windows_ver",
+   "fieldtype": "Select",
+   "label": "Versi\u00f3n de Windows",
+   "options": "\nWindows 11 Home\nWindows 11 Profesional\nWindows 10 Home\nWindows 10 Profesional\nWindows 8.1\nWindows 8\nWindows 7 Ultimate\nWindows 7 Home\nWindows Vista\nWindows XP"
+  },
+  {
+   "fieldname": "inv_categoria",
+   "fieldtype": "Select",
+   "label": "Categoria",
+   "options": "\nBASE\nCONFIANZA\nCONTRATO"
+  },
+  {
+   "fieldname": "inv_direccion",
+   "fieldtype": "Link",
+   "label": "Direcci\u00f3n a la que pertenece",
+   "options": "Inv_Direccion"
+  },
+  {
+   "fieldname": "inv_departametno",
+   "fieldtype": "Link",
+   "label": "Oficina o dpto. al que pertenece",
+   "options": "Inv_Departametno"
+  },
+  {
+   "fieldname": "inv_ip",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n de IP del Equipo"
+  },
+  {
+   "fieldname": "informaci\u00f3n_general_section",
+   "fieldtype": "Section Break",
+   "label": "Informaci\u00f3n General"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-10 10:33:44.536619",
+ "modified": "2024-04-19 09:48:33.899293",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Inventario",
@@ -178,5 +231,8 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

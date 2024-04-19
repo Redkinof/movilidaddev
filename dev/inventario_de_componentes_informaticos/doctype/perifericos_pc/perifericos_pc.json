@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-15 17:44:36.275755",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "periferico_pc",
+  "per_marca",
+  "per_modelo",
+  "per_num_inv",
+  "per_num_serie",
+  "per_tamano_pantalla",
+  "tipo_peri"
+ ],
+ "fields": [
+  {
+   "fieldname": "periferico_pc",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Periferico",
+   "options": "periferico_pc"
+  },
+  {
+   "fieldname": "per_marca",
+   "fieldtype": "Link",
+   "label": "Marca",
+   "options": "per_marca"
+  },
+  {
+   "fieldname": "per_modelo",
+   "fieldtype": "Link",
+   "label": "Modelo",
+   "options": "per_modelo"
+  },
+  {
+   "fieldname": "per_num_inv",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Numero de Inventario"
+  },
+  {
+   "fieldname": "per_num_serie",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Numero de Serie"
+  },
+  {
+   "fieldname": "per_tamano_pantalla",
+   "fieldtype": "Link",
+   "label": "Tama\u00f1o de pantalla (Pulgadas)",
+   "options": "per_tamano_pantalla"
+  },
+  {
+   "fieldname": "tipo_peri",
+   "fieldtype": "Link",
+   "label": "Tipo de periferico",
+   "options": "tipo_peri"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-16 17:53:17.883627",
+ "modified_by": "Administrator",
+ "module": "Inventario de componentes informaticos",
+ "name": "Perifericos Pc",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

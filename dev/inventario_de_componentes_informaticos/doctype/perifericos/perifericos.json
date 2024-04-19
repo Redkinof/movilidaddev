@@ -38,13 +38,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "tipo_perif\u00e9rico1",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Tipo Perif\u00e9rico",
-   "options": "Monitor\nMouse\nTeclado\nUnidad \u00d3ptica"
-  },
-  {
    "depends_on": "eval:doc.tipo_perif\u00e9rico1==\"Monitor\";\n\n",
    "fieldname": "monitor_marca",
    "fieldtype": "Link",
@@ -158,12 +151,19 @@
    "fieldtype": "Select",
    "label": "Tipo",
    "options": "Al\u00e1mbrico\nInal\u00e1mbrico"
+  },
+  {
+   "fieldname": "tipo_perif\u00e9rico1",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tipo Perif\u00e9rico",
+   "options": "Monitor\nMouse\nTeclado\nUnidad \u00d3ptica"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-04-04 11:02:30.453015",
+ "modified": "2024-04-15 14:26:19.526279",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Perifericos",

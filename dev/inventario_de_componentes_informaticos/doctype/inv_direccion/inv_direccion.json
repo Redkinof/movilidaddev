@@ -1,26 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-03-06 14:56:48.905537",
+ "creation": "2024-04-17 11:24:37.974219",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "marca"
+  "inv_direccion"
  ],
  "fields": [
   {
    "allow_in_quick_entry": 1,
-   "fieldname": "marca",
+   "fieldname": "inv_direccion",
    "fieldtype": "Data",
-   "label": "Marca"
+   "label": "Direcci\u00f3n a la que pertenece"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-16 09:32:08.837466",
+ "modified": "2024-04-17 11:25:27.539687",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
- "name": "Inv_Marca_Teclado",
+ "name": "Inv_Direccion",
  "owner": "Administrator",
  "permissions": [
   {
@@ -41,5 +41,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "marca"
+ "title_field": "inv_direccion"
 }

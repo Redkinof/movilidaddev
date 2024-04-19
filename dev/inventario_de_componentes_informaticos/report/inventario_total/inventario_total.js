@@ -7,7 +7,8 @@ frappe.query_reports["Inventario Total"] = {
 			fieldname: "from_date",
 			label: __("De la Fecha"),
 			fieldtype: "Date",
-			default: frappe.datetime.add_days(frappe.datetime.now_date(true), -30),
+			// default: frappe.datetime.add_days(frappe.datetime.now_date(true), -40), 
+            default: frappe.datetime.get_year_start,
 		},
 		{
 			fieldname: "to_date",

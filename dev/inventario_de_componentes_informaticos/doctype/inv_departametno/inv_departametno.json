@@ -1,26 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-03-06 14:56:48.905537",
+ "creation": "2024-04-17 11:26:54.886970",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "marca"
+  "inv_departametno"
  ],
  "fields": [
   {
    "allow_in_quick_entry": 1,
-   "fieldname": "marca",
+   "fieldname": "inv_departametno",
    "fieldtype": "Data",
-   "label": "Marca"
+   "label": "Oficina o dpto. al que pertenece"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-16 09:32:08.837466",
+ "modified": "2024-04-17 11:27:21.801267",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
- "name": "Inv_Marca_Teclado",
+ "name": "Inv_Departametno",
  "owner": "Administrator",
  "permissions": [
   {
@@ -41,5 +41,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "marca"
+ "title_field": "inv_departametno"
 }
