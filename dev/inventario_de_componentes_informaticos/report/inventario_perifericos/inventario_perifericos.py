@@ -10,69 +10,77 @@ def execute(filters=None):
 			"fieldname":"name",
 			"label":"ID",
 			"fieldtype":"Data",
-			"width":220
+			"width":150
 		},
 		{
 			"fieldname":"parent",
 			"label":"Parent",
 			"fieldtype":"Data",
-			"width":220
+			"width":150
 		},
+		# {
+		# 	"fieldname":"creation",
+		# 	"label":"Fecha de Creacion",
+		# 	"fieldtype":"Date",
+		# 	"width":180
+		# },
 		{
-			"fieldname":"tipo_perif\u00e9rico1",
+			"fieldname":"periferico_pc",
 			"label":"Tipo de Periferico",
 			"fieldtype":"Data",
-			"width":220
+			"width":150
 		},
 		{
-			"fieldname":"marca",
-			"label":"Marca Monitor",
+			"fieldname":"per_marca",
+			"label":"Marca del Periferico",
 			"fieldtype":"Data",
-			"width":220
+			"width":150
 		},
-		
 		{
-			"fieldname":"modelo",
-			"label":"Modelo Monitor",
+			"fieldname":"per_modelo",
+			"label":"Modelo del Periferico",
 			"fieldtype":"Data",
-			"width":220
+			"width":150
 		},
 		{
-			"fieldname":"tamano",
-			"label":"Tamaño Monitor",
-			"fieldtype":"Data",
-			"width":220
-		},
-		{
-			"fieldname":"num_monitor",
+			"fieldname":"per_num_inv",
 			"label":"Numero de Inventario",
 			"fieldtype":"Data",
-			"width":220
+			"width":150
 		},
 		{
-			"fieldname":"num_serie",
+			"fieldname":"per_num_serie",
 			"label":"Numero de Serie",
 			"fieldtype":"Data",
-			"width":220
+			"width":150
 		},
 		{
-			"fieldname":"tipo",
-			"label":"Tipo de monitor",
+			"fieldname":"per_tamano_pantalla",
+			"label":"Tamaño de la pantalla (Pulgadas)",
 			"fieldtype":"Data",
-			"width":220
+			"width":150
+		},
+		{
+			"fieldname":"tipo_peri",
+			"label":"Tipo de Periferico",
+			"fieldtype":"Data",
+			"width":150
 		},
 		
 	]
-	data = frappe.get_all("Perifericos",fields=[
+	data = frappe.get_all("Perifericos Pc",fields=[
 		"name",
 		"parent",
-		"tipo_perif\u00e9rico1",
-		"monitor_marca.marca",
-		"monitor_modelo.modelo",
-		"monitor_tamano.tamano",
-		"num_monitor",
-		"num_serie",
-		"monitor_tipo.tipo",
+		# "creation",
+		"periferico_pc.periferico_pc",
+		"per_marca.per_marca",
+		"per_modelo.per_modelo",
+		"per_num_inv",
+		"per_num_serie",
+		"per_tamano_pantalla.per_tamano_pantalla",
+		"tipo_peri.tipo_peri",
 		
-		])
+		],
+		filters=[['creation', 'between',[filters.from_date,filters.to_date]]]
+		)
 	return columns, data

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:modelo",
  "creation": "2024-03-06 13:45:46.319808",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,15 +13,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "modelo",
    "fieldtype": "Data",
-   "label": "Modelo"
+   "label": "Modelo",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-20 09:52:46.102461",
+ "modified": "2024-11-28 12:31:42.531937",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Inv_Modelo_Procesador",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

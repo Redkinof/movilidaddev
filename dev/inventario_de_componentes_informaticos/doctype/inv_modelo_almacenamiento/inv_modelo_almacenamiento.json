@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:modelo",
  "creation": "2024-03-06 14:39:02.757787",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,15 +13,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "modelo",
    "fieldtype": "Data",
-   "label": "Modelo"
+   "label": "Modelo",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-20 10:01:53.709877",
+ "modified": "2024-11-28 12:45:18.934217",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Inv_Modelo_Almacenamiento",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:marca",
  "creation": "2024-03-06 14:02:22.292224",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,15 +13,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "marca",
    "fieldtype": "Data",
-   "label": "Marca"
+   "label": "Marca",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-20 09:53:25.636280",
+ "modified": "2024-11-28 12:36:55.950635",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Inv_Marca_RAM",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:tamano",
  "creation": "2024-03-06 14:41:13.174150",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -18,15 +19,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "tamano",
    "fieldtype": "Data",
-   "label": "Tama\u00f1o"
+   "label": "Tama\u00f1o",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-20 09:53:36.280786",
+ "modified": "2024-11-28 12:47:00.435276",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Inv_Tamano_Almacenamiento",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

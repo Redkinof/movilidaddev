@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:per_tamano_pantalla",
  "creation": "2024-04-16 13:53:51.061208",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,15 +13,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "per_tamano_pantalla",
    "fieldtype": "Data",
-   "label": "Tama\u00f1o de pantalla (Pulgadas)"
+   "label": "Tama\u00f1o de pantalla (Pulgadas)",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-16 18:07:54.803271",
+ "modified": "2024-11-28 13:01:25.039604",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "per_tamano_pantalla",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

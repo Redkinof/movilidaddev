@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:periferico_pc",
  "creation": "2024-04-16 12:42:21.873589",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,15 +13,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "periferico_pc",
    "fieldtype": "Data",
-   "label": "Periferico"
+   "label": "Periferico",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-16 18:07:04.397997",
+ "modified": "2024-11-28 12:48:23.708470",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "periferico_pc",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

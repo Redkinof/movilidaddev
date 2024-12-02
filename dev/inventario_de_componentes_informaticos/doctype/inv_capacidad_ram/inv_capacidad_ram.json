@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:capacidad",
  "creation": "2024-03-06 14:04:41.472910",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,15 +13,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "capacidad",
    "fieldtype": "Data",
-   "label": "Capacidad"
+   "label": "Capacidad",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-20 09:53:11.297449",
+ "modified": "2024-11-28 12:38:43.183024",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Inv_Capacidad_RAM",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

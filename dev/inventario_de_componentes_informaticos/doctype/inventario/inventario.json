@@ -13,12 +13,17 @@
   "inv_usuario",
   "inv_puesto",
   "inv_categoria",
+  "estado_del_equipo",
+  "folio_res",
+  "res_usuario",
   "column_break_ubdr",
   "windows_ver",
   "inv_ubicacion",
   "inv_direccion",
   "inv_departametno",
   "inv_ip",
+  "direcci\u00f3n_mac",
+  "direcci\u00f3n_mac_wifi",
   "section_break_cagw",
   "equipo_de_computo_column",
   "pc_marca",
@@ -32,8 +37,6 @@
   "table_ram",
   "discos_de_almacenamiento_section",
   "table_discos",
-  "section_break_wbfc",
-  "table_wufa",
   "section_break_hpqk",
   "tabla_perifericos"
  ],
@@ -50,11 +53,14 @@
   {
    "fieldname": "num_equipo",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Numero de Inventario Equipo"
   },
   {
    "fieldname": "num_serie",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Numero de Serie"
   },
   {
@@ -69,6 +75,7 @@
    "allow_in_quick_entry": 1,
    "fieldname": "inv_ubicacion",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Ubicacion",
    "options": "Inv_Ubicacion"
   },
@@ -148,16 +155,6 @@
    "options": "Discos de almacenamiento"
   },
   {
-   "fieldname": "section_break_wbfc",
-   "fieldtype": "Section Break",
-   "label": "Perif\u00e9ricos"
-  },
-  {
-   "fieldname": "table_wufa",
-   "fieldtype": "Table",
-   "options": "Perifericos"
-  },
-  {
    "fieldname": "inv_puesto",
    "fieldtype": "Link",
    "label": "Puesto",
@@ -166,7 +163,7 @@
   {
    "fieldname": "section_break_hpqk",
    "fieldtype": "Section Break",
-   "label": "(Ignorar) Perifericos"
+   "label": "Perifericos"
   },
   {
    "fieldname": "tabla_perifericos",
@@ -206,11 +203,40 @@
    "fieldname": "informaci\u00f3n_general_section",
    "fieldtype": "Section Break",
    "label": "Informaci\u00f3n General"
+  },
+  {
+   "fieldname": "estado_del_equipo",
+   "fieldtype": "Link",
+   "label": "Estado del Equipo",
+   "options": "Inv_Estado_del_Equipo"
+  },
+  {
+   "fieldname": "direcci\u00f3n_mac",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n MAC Ethernet"
+  },
+  {
+   "fieldname": "direcci\u00f3n_mac_wifi",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n MAC WIFI"
+  },
+  {
+   "fieldname": "folio_res",
+   "fieldtype": "Int",
+   "in_standard_filter": 1,
+   "label": "Folio del vale de resguardo"
+  },
+  {
+   "fieldname": "res_usuario",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Responsable del vale de resguardo",
+   "options": "Inv_Usuario"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-19 09:48:33.899293",
+ "modified": "2024-11-26 14:52:13.278291",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Inventario",

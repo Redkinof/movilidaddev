@@ -43,5 +43,6 @@ def execute(filters=None):
 			"width":220
 		},
 	]
-	data = frappe.get_all("Discos de almacenamiento",fields=["name","parent","disco_marca.marca","disco_modelo.modelo","disco_tamano.tamano","tipo"])
+	data = frappe.get_all("Discos de almacenamiento",fields=["name","parent","disco_marca.marca","disco_modelo.modelo","disco_tamano.tamano","tipo"],
+		filters=[['creation', 'between',[filters.from_date,filters.to_date]]])
 	return columns, data

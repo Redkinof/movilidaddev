@@ -43,7 +43,9 @@
   {
    "fieldname": "per_num_serie",
    "fieldtype": "Data",
+   "in_filter": 1,
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Numero de Serie"
   },
   {
@@ -62,7 +64,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-04-16 17:53:17.883627",
+ "modified": "2024-09-17 10:24:57.771673",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Perifericos Pc",

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:tipo_peri",
  "creation": "2024-04-16 13:54:42.007593",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,15 +13,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "tipo_peri",
    "fieldtype": "Data",
-   "label": "Tipo de periferico"
+   "label": "Tipo de periferico",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-16 18:08:12.692886",
+ "modified": "2024-11-28 13:02:34.711707",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "tipo_peri",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

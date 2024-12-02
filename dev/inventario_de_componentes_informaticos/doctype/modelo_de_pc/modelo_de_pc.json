@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:modelo_de_pc",
  "creation": "2024-04-16 14:06:46.961889",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -11,15 +12,17 @@
   {
    "fieldname": "modelo_de_pc",
    "fieldtype": "Data",
-   "label": "Modelo"
+   "label": "Modelo",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-16 14:22:33.185475",
+ "modified": "2024-11-28 12:27:37.527555",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "modelo_de_pc",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

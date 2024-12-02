@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:per_modelo",
  "creation": "2024-04-16 13:51:08.691751",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,15 +13,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "per_modelo",
    "fieldtype": "Data",
-   "label": "Modelo"
+   "label": "Modelo",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-16 18:07:36.867913",
+ "modified": "2024-11-28 12:53:15.461393",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "per_modelo",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

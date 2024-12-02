@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:tipo_de_instalacion_o_reinstalacion_de_programa",
+ "creation": "2024-08-08 13:32:27.041603",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tipo_de_instalacion_o_reinstalacion_de_programa"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "tipo_de_instalacion_o_reinstalacion_de_programa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tipo de instalacion o reinstalacion de programa",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-08 13:57:33.264296",
+ "modified_by": "Administrator",
+ "module": "Informatica",
+ "name": "Instalar_o_reinstalar_programas",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

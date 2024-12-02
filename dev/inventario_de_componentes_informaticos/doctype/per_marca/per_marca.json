@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:per_marca",
  "creation": "2024-04-16 12:47:05.758378",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,15 +13,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "per_marca",
    "fieldtype": "Data",
-   "label": "Marca"
+   "label": "Marca",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-16 18:07:21.067946",
+ "modified": "2024-11-28 12:49:48.594447",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "per_marca",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

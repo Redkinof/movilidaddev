@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:inv_departametno",
  "creation": "2024-04-17 11:26:54.886970",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,15 +13,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "inv_departametno",
    "fieldtype": "Data",
-   "label": "Oficina o dpto. al que pertenece"
+   "label": "Oficina o dpto. al que pertenece",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-17 11:27:21.801267",
+ "modified": "2024-11-28 11:36:12.890343",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Inv_Departametno",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

@@ -3,6 +3,18 @@
 
 frappe.query_reports["Inventario RAM"] = {
 	"filters": [
-
+		{
+			fieldname: "from_date",
+			label: __("De la Fecha"),
+			fieldtype: "Date",
+			// default: frappe.datetime.add_days(frappe.datetime.now_date(true), -40), 
+            default: frappe.datetime.get_year_start,
+		},
+		{
+			fieldname: "to_date",
+			label: __("A la Fecha"),
+			fieldtype: "Date",
+			default: frappe.datetime.now_date(true),
+		},
 	]
 };

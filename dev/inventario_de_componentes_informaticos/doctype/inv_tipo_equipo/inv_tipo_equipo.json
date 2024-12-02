@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:tipo",
  "creation": "2024-03-06 13:40:36.529244",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,15 +13,17 @@
    "allow_in_quick_entry": 1,
    "fieldname": "tipo",
    "fieldtype": "Data",
-   "label": "Tipo"
+   "label": "Tipo",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-20 10:00:13.467504",
+ "modified": "2024-11-28 12:30:33.039617",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Inv_Tipo_Equipo",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

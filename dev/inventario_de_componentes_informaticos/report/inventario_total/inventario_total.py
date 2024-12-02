@@ -31,6 +31,12 @@ def execute(filters=None):
 			"width":150
 		},
 		{
+			"fieldname":"inv_estado_del_equipo",
+			"label":"Estado del Equipo",
+			"fieldtype":"Data",
+			"width":150
+		},
+		{
 			"fieldname":"usuario",
 			"label":"Usuario",
 			"fieldtype":"Data",
@@ -114,6 +120,18 @@ def execute(filters=None):
 			"fieldtype":"Data",
 			"width":200,
 		},
+		{
+			"fieldname":"direcci\u00f3n_mac",
+			"label":"Direccion Ethernet Mac",
+			"fieldtype":"Data",
+			"width":200,
+		},
+		{
+			"fieldname":"direcci\u00f3n_mac_wifi",
+			"label":"Direccion Ethernet Mac Wifi",
+			"fieldtype":"Data",
+			"width":200,
+		},
 	]
 	
 	#data = [{"datos":"Prueba"},{"datos":"Info"},{"datos":"probando"}]
@@ -125,6 +143,7 @@ def execute(filters=None):
 			"creation",
 			"num_equipo",
 			"num_serie",
+			"estado_del_equipo.inv_estado_del_equipo",
 			"inv_usuario.usuario",
 			"inv_puesto.puesto",
 			"inv_categoria",
@@ -138,20 +157,22 @@ def execute(filters=None):
 			"tipo.tipo",
 			"proce_marca",
 			"proce_modelo.modelo",
-			"proce_velocidad.velocidad"
+			"proce_velocidad.velocidad",
+			"direcci\u00f3n_mac",
+			"direcci\u00f3n_mac_wifi",
 			],
 			filters=[['creation', 'between',[filters.from_date,filters.to_date]]]
 		)
 
 	# inv= frappe.get_all('Inventario', filters=[['creation', 'between',['2024-04-02','2024-04-04']]] )
  
-	array1=frappe.get_all("Memorias RAM",fields=["ram_marca","ram_modelo"])
+	# array1=frappe.get_all("Memorias RAM",fields=["ram_marca","ram_modelo"])
 
-	array2=frappe.get_all("Memorias RAM",fields=["ram_tipo","ram_velocidad"])
+	# array2=frappe.get_all("Memorias RAM",fields=["ram_tipo","ram_velocidad"])
 
-	array1.extend(array2)
+	# array1.extend(array2)
 
-	array1.append(array2)
+	# array1.append(array2)
 
 
 	return columns, data

@@ -1,0 +1,348 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-08 12:13:12.941753",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "informaci\u00f3n_de_usuario_section",
+  "nombre_del_usuario",
+  "cargo_categoria",
+  "adscripcion",
+  "column_break_fyii",
+  "fecha_de_peticion",
+  "extension_telefonica",
+  "informaci\u00f3n_del_soporte_section",
+  "no_inventario_del_equipo",
+  "column_break_gqua",
+  "marca",
+  "column_break_zgtt",
+  "modelo",
+  "column_break_jkbn",
+  "serie",
+  "section_break_exhx",
+  "soporte_tecnico",
+  "tecnico",
+  "column_break_jzti",
+  "revision_yo_mantenimiento",
+  "revision",
+  "column_break_wplt",
+  "instalar_o_reinstalar_programas",
+  "intalar",
+  "section_break_avln",
+  "observaciones_uno",
+  "section_break_jfzc",
+  "copia_de_seguridad",
+  "copia",
+  "column_break_pgqh",
+  "solicitud_de_equipo_informatico",
+  "solicitud",
+  "column_break_vrzq",
+  "correo_institucional",
+  "correo",
+  "section_break_rcxm",
+  "observaciones_dos",
+  "otros",
+  "descripcion",
+  "diagnostico_y_soluciones_section",
+  "fecha_diagnostico",
+  "diagnostico",
+  "column_break_kirp",
+  "fecha_solucion",
+  "solucion",
+  "section_break_eaan",
+  "observaciones",
+  "section_break_usrj",
+  "firma_del_usuario_solicitud",
+  "column_break_exwx",
+  "nombre_y_firma_soporte_tecnico",
+  "column_break_niyd",
+  "firma_usuario_conformidad"
+ ],
+ "fields": [
+  {
+   "fieldname": "informaci\u00f3n_de_usuario_section",
+   "fieldtype": "Section Break",
+   "label": "Informaci\u00f3n de Usuario"
+  },
+  {
+   "fieldname": "nombre_del_usuario",
+   "fieldtype": "Data",
+   "label": "Nombre del usuario"
+  },
+  {
+   "fieldname": "fecha_de_peticion",
+   "fieldtype": "Date",
+   "label": "Fecha de peticion"
+  },
+  {
+   "fieldname": "cargo_categoria",
+   "fieldtype": "Data",
+   "label": "Cargo / Categoria"
+  },
+  {
+   "fieldname": "adscripcion",
+   "fieldtype": "Data",
+   "label": "Adscripci\u00f3n"
+  },
+  {
+   "fieldname": "extension_telefonica",
+   "fieldtype": "Data",
+   "label": "Extensi\u00f3n telef\u00f3nica"
+  },
+  {
+   "fieldname": "column_break_fyii",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "informaci\u00f3n_del_soporte_section",
+   "fieldtype": "Section Break",
+   "label": "Informaci\u00f3n del soporte"
+  },
+  {
+   "fieldname": "no_inventario_del_equipo",
+   "fieldtype": "Data",
+   "label": "No inventario del equipo"
+  },
+  {
+   "fieldname": "marca",
+   "fieldtype": "Data",
+   "label": "Marca"
+  },
+  {
+   "fieldname": "modelo",
+   "fieldtype": "Data",
+   "label": "Modelo"
+  },
+  {
+   "fieldname": "serie",
+   "fieldtype": "Data",
+   "label": "Serie"
+  },
+  {
+   "fieldname": "soporte_tecnico",
+   "fieldtype": "Table MultiSelect",
+   "label": "Soporte tecnico",
+   "options": "Link_Soporte_Tecnico"
+  },
+  {
+   "fieldname": "revision_yo_mantenimiento",
+   "fieldtype": "Table MultiSelect",
+   "label": "Revision y/o mantenimiento",
+   "options": "Link_Revision_o_Mantenimiento"
+  },
+  {
+   "fieldname": "instalar_o_reinstalar_programas",
+   "fieldtype": "Table MultiSelect",
+   "label": "Instalar_o_reinstalar_programas",
+   "options": "Link_Instalar_o_reinstalar_programas"
+  },
+  {
+   "fieldname": "observaciones_uno",
+   "fieldtype": "Small Text",
+   "label": "Observaciones"
+  },
+  {
+   "fieldname": "copia_de_seguridad",
+   "fieldtype": "Table MultiSelect",
+   "label": "Copia de seguridad",
+   "options": "Link_copia_de_seguridad"
+  },
+  {
+   "fieldname": "solicitud_de_equipo_informatico",
+   "fieldtype": "Table MultiSelect",
+   "label": "Solicitud de equipo informatico",
+   "options": "Link_solicitud_de_equipo_informatico"
+  },
+  {
+   "fieldname": "correo_institucional",
+   "fieldtype": "Table MultiSelect",
+   "label": "Correo institucional",
+   "options": "Link_correo_institucional"
+  },
+  {
+   "fieldname": "observaciones_dos",
+   "fieldtype": "Small Text",
+   "label": "Observaciones"
+  },
+  {
+   "fieldname": "otros",
+   "fieldtype": "Small Text",
+   "label": "Otros"
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Small Text",
+   "label": "Descripci\u00f3n"
+  },
+  {
+   "fieldname": "diagnostico_y_soluciones_section",
+   "fieldtype": "Section Break",
+   "label": "Diagnostico y soluciones"
+  },
+  {
+   "fieldname": "diagnostico",
+   "fieldtype": "Small Text",
+   "label": "Diagnostico"
+  },
+  {
+   "fieldname": "solucion",
+   "fieldtype": "Small Text",
+   "label": "Solucion"
+  },
+  {
+   "fieldname": "observaciones",
+   "fieldtype": "Small Text",
+   "label": "Observaciones"
+  },
+  {
+   "fieldname": "firma_del_usuario_solicitud",
+   "fieldtype": "Signature",
+   "label": "Firma del usuario Solicitud"
+  },
+  {
+   "fieldname": "nombre_y_firma_soporte_tecnico",
+   "fieldtype": "Signature",
+   "label": "Nombre y firma Soporte tecnico"
+  },
+  {
+   "fieldname": "firma_usuario_conformidad",
+   "fieldtype": "Signature",
+   "label": "Firma usuario Conformidad"
+  },
+  {
+   "fieldname": "section_break_usrj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_exwx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_niyd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fecha_diagnostico",
+   "fieldtype": "Date",
+   "label": "Fecha Diagnostico"
+  },
+  {
+   "fieldname": "fecha_solucion",
+   "fieldtype": "Date",
+   "label": "Fecha Solucion"
+  },
+  {
+   "fieldname": "column_break_kirp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_eaan",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_gqua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zgtt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jkbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_exhx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jzti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wplt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_avln",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_jfzc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_pgqh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vrzq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rcxm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "copia",
+   "fieldtype": "Select",
+   "label": "Copia",
+   "options": "SI\nNO\nALOMEJOR"
+  },
+  {
+   "fieldname": "tecnico",
+   "fieldtype": "Select",
+   "label": "Tecnico",
+   "options": "reporte-soporte\nreporte-soporte"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Select",
+   "label": "revision",
+   "options": "reporte-soporte\nreporte-soporte\nreporte-soporte"
+  },
+  {
+   "fieldname": "intalar",
+   "fieldtype": "Select",
+   "label": "Intalar",
+   "options": "reporte-soporte\nreporte-soporte\nreporte-soporte"
+  },
+  {
+   "fieldname": "solicitud",
+   "fieldtype": "Select",
+   "label": "Solicitud",
+   "options": "reporte-soporte\nreporte-soporte\nreporte-soporte"
+  },
+  {
+   "fieldname": "correo",
+   "fieldtype": "Select",
+   "label": "Correo",
+   "options": "reporte-soporte\nreporte-soportereporte-soporte"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-09 15:46:01.449672",
+ "modified_by": "Administrator",
+ "module": "Informatica",
+ "name": "Reporte_Servicio",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

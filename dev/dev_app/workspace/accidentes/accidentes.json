@@ -32,7 +32,7 @@
    "is_query_report": 0,
    "label": "Ver Accientes",
    "link_count": 0,
-   "link_to": "ACCIDENTE",
+   "link_to": "Accidente",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -52,13 +52,13 @@
    "is_query_report": 0,
    "label": "Ver Localidades",
    "link_count": 0,
-   "link_to": "LOCALIDAD",
+   "link_to": "Localidad",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2024-03-12 12:07:19.967891",
+ "modified": "2024-08-08 12:10:22.538602",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "Accidentes",
@@ -67,12 +67,8 @@
  "parent_page": "Operativos",
  "public": 1,
  "quick_lists": [],
- "roles": [
-  {
-   "role": "Operativo Administrativo"
-  }
- ],
- "sequence_id": 5.0,
+ "roles": [],
+ "sequence_id": 7.0,
  "shortcuts": [],
  "title": "Accidentes"
 }

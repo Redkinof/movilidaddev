@@ -43,5 +43,6 @@ def execute(filters=None):
 			"width":220
 		},
 	]
-	data = frappe.get_all("Memorias RAM",fields=["name","parent","ram_marca.marca","ram_modelo.capacidad","ram_tipo","ram_velocidad.velocidad"])
+	data = frappe.get_all("Memorias RAM",fields=["name","parent","ram_marca.marca","ram_modelo.capacidad","ram_tipo","ram_velocidad.velocidad"],
+		filters=[['creation', 'between',[filters.from_date,filters.to_date]]])
 	return columns, data

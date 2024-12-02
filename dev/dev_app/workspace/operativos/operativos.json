@@ -18,7 +18,7 @@
  "is_hidden": 0,
  "label": "Operativos",
  "links": [],
- "modified": "2024-03-12 12:07:19.914835",
+ "modified": "2024-08-08 12:10:22.493427",
  "modified_by": "Administrator",
  "module": "Dev app",
  "name": "Operativos",
@@ -27,12 +27,8 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [
-  {
-   "role": "Operativo Captura"
-  }
- ],
- "sequence_id": 4.0,
+ "roles": [],
+ "sequence_id": 6.0,
  "shortcuts": [],
  "title": "Operativos"
 }

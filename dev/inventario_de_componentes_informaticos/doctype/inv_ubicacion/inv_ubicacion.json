@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:ubicacion",
  "creation": "2024-03-06 12:30:05.582647",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -18,10 +19,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-20 09:53:02.024166",
+ "modified": "2024-11-28 08:30:56.507645",
  "modified_by": "Administrator",
  "module": "Inventario de componentes informaticos",
  "name": "Inv_Ubicacion",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

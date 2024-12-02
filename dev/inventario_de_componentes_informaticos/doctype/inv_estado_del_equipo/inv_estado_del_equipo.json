@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:inv_estado_del_equipo",
+ "creation": "2024-05-07 13:39:11.066115",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "inv_estado_del_equipo"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "inv_estado_del_equipo",
+   "fieldtype": "Data",
+   "label": "Estado del Equipo",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-28 12:24:43.855343",
+ "modified_by": "Administrator",
+ "module": "Inventario de componentes informaticos",
+ "name": "Inv_Estado_del_Equipo",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "inv_estado_del_equipo"
+}
