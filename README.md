@@ -1,6 +1,6 @@
 ## Dev app
 
-App for Dev and study
+Este es un modulo de frappe utilizado para la funcionalidad de el sistema de transporte publico. 
 
 #### License
 
